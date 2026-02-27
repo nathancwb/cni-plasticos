@@ -11,34 +11,10 @@ const PRODUCTS = [
       "dimensao": "45mm",
       "peso": "14g"
     },
-    "img": "assets/images/products/variants/w-tradicional/350-menos-1.jpg",
+    "img": "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-b-copia-2.jpg",
     "has3d": true,
     "model": "assets/models/10.glb",
     "colors": [
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/w-tradicional/350-menos-1.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-10.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-11.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-12.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-13.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-14.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-15.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-16.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-17.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-18.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-2.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-3.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-4.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-5.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-6.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-7.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-8.jpg",
-          "assets/images/products/variants/w-tradicional/350-menos-9.jpg"
-        ]
-      },
       {
         "name": "Isolador W Para Cerca Eletrica Tradicional Amarelo B Copia",
         "class": "isolador-w-para-cerca-eletrica-tradicional-amarelo-b-copia",
@@ -59,33 +35,9 @@ const PRODUCTS = [
       "dimensao": "48mm",
       "peso": "18g"
     },
-    "img": "assets/images/products/variants/w-reforcado/350-menos-1.jpg",
+    "img": "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-0c.jpg",
     "has3d": true,
-    "model": "assets/models/07.glb",
-    "colors": [
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/w-reforcado/350-menos-1.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-10.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-11.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-12.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-13.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-14.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-15.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-16.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-2.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-3.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-4.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-5.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-6.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-7.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-8.jpg",
-          "assets/images/products/variants/w-reforcado/350-menos-9.jpg"
-        ]
-      }
-    ]
+    "model": "assets/models/07.glb"
   },
   {
     "id": "w-economico",
@@ -851,9 +803,57 @@ const PRODUCTS = [
       "dimensao": "28mm",
       "peso": "15g"
     },
-    "img": "assets/images/products/isolador-prego.png",
+    "img": "assets/images/products/variants/isolador-prego/reforcado-1.jpg",
     "has3d": true,
-    "model": "assets/models/06.glb"
+    "model": "assets/models/06.glb",
+    "colors": [
+      {
+        "name": "Reforcado",
+        "class": "reforcado",
+        "imgs": [
+          "assets/images/products/variants/isolador-prego/reforcado-1.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-10.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-11.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-12.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-13.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-14.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-15.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-16.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-2.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-3.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-4.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-5.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-6.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-7.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-8.jpg",
+          "assets/images/products/variants/isolador-prego/reforcado-9.jpg"
+        ]
+      },
+      {
+        "name": "Tradicional",
+        "class": "tradicional",
+        "imgs": [
+          "assets/images/products/variants/isolador-prego/tradicional-1.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-10.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-11.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-12.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-13.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-14.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-15.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-16.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-17.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-18.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-2.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-3.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-4.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-5.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-6.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-7.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-8.jpg",
+          "assets/images/products/variants/isolador-prego/tradicional-9.jpg"
+        ]
+      }
+    ]
   },
   {
     "id": "engate",
