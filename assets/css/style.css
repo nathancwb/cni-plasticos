@@ -548,8 +548,8 @@ img {
 }
 
 .viewer-showcase {
-    background: #1A1A1A;
-    border: 1px solid #333;
+    background: #FFFFFF;
+    border: 1px solid var(--border-color);
     height: 550px;
     margin-top: 40px;
     position: relative;
@@ -558,7 +558,7 @@ img {
 model-viewer {
     width: 100%;
     height: 100%;
-    background: #1A1A1A;
+    background: #FFFFFF;
 }
 
 .viewer-caption {

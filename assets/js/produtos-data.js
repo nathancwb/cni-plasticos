@@ -13,7 +13,7 @@ const PRODUCTS = [
     },
     "img": "assets/images/products/variants/w-tradicional/350-menos-1.jpg",
     "has3d": true,
-    "model": "assets/models/06.glb",
+    "model": "assets/models/10.glb",
     "colors": [
       {
         "name": "350 Menos",
@@ -853,7 +853,7 @@ const PRODUCTS = [
     },
     "img": "assets/images/products/isolador-prego.png",
     "has3d": true,
-    "model": "assets/models/10.glb"
+    "model": "assets/models/06.glb"
   },
   {
     "id": "engate",
