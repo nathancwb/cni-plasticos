@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | CNI Plásticos</title>
+    <meta name="description"
+        content="Conheça a linha completa de produtos da CNI Plásticos: isoladores para cerca elétrica, roldanas, ganchos, catracas e niveladores industriais.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+    <style>
+        /* ============================================
+           PRODUTOS PAGE — SHOPIFY STYLE
+           ============================================ */
+        .catalog-hero {
+            background: var(--dark-sea-blue);
+            padding: 100px 0 40px;
+            text-align: left
+        }
+
+        .catalog-breadcrumb {
+            font-size: .8rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif
+        }
+
+        .catalog-breadcrumb a {
+            color: rgba(255, 255, 255, .45);
+            transition: color .2s;
+            text-decoration: none
+        }
+
+        .catalog-breadcrumb a:hover {
+            color: var(--rich-blue)
+        }
+
+        .catalog-breadcrumb span {
+            margin: 0 8px;
+            color: rgba(255, 255, 255, .35)
+        }
+
+        .catalog-hero h1 {
+            color: #fff;
+            font-size: 2.25rem;
+            margin-bottom: 8px
+        }
+
+        .catalog-hero p {
+            color: rgba(255, 255, 255, .6);
+            font-size: 1rem
+        }
+
+        /* Download Banner */
+        .download-banner {
+            background: var(--dark-sea-blue);
+            border-radius: 12px;
+            padding: 20px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: -20px auto 30px;
+            position: relative;
+            z-index: 2;
+            max-width: 1200px
+        }
+
+        .download-banner-info {
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        .download-banner-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(255, 255, 255, .08);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0
+        }
+
+        .download-banner-text h3 {
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px
+        }
+
+        .download-banner-text p {
+            color: rgba(255, 255, 255, .5);
+            font-size: .8rem
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--sea-blue);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-family: 'Poppins', sans-serif;
+            font-size: .8rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .2s;
+            white-space: nowrap
+        }
+
+        .btn-download:hover {
+            background: var(--rich-blue);
+            transform: translateY(-1px)
+        }
+
+        .btn-download svg {
+            width: 18px;
+            height: 18px
+        }
+
+        /* Product Grid */
+        .products-section {
+            background: var(--bg-section);
+            padding: 40px 0 60px
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 16px;
+            margin-top: 20px
+        }
+
+        .grid-card {
+            background: #fff;
+            border: 2px solid transparent;
+            border-radius: 12px;
+            padding: 16px;
+            cursor: pointer;
+            transition: all .25s;
+            text-align: center;
+            position: relative
+        }
+
+        .grid-card:hover {
+            border-color: var(--sea-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 108, 188, .12)
+        }
+
+        .grid-card.active {
+            border-color: var(--sea-blue);
+            box-shadow: 0 4px 16px rgba(0, 108, 188, .15)
+        }
+
+        .grid-card-img {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: contain;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            padding: 8px
+        }
+
+        .grid-card h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: .78rem;
+            font-weight: 600;
+            color: var(--dark-sea-blue);
+            margin-bottom: 2px;
+            line-height: 1.3
+        }
+
+        .grid-card p {
+            font-size: .68rem;
+            color: var(--soft-grey)
+        }
+
+        .grid-card .badge-3d {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: rgba(34, 197, 94, .15);
+            color: #16a34a;
+            font-size: .55rem;
+            font-weight: 700;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: .04em
+        }
+
+        .category-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: .7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .12em;
+            color: var(--sea-blue);
+            margin: 28px 0 8px;
+            padding: 6px 14px;
+            background: rgba(0, 108, 188, .06);
+            border-radius: 6px;
+            display: inline-block
+        }
+
+        /* ==========================================
+           SHOPIFY-STYLE PRODUCT DETAIL
+           ========================================== */
+        .product-detail {
+            background: #fff;
+            border-top: 1px solid var(--border-color);
+            padding: 50px 0 60px;
+            display: none
+        }
+
+        .product-detail.visible {
+            display: block;
+            animation: fadeUp .4s ease
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        .detail-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start
+        }
+
+        /* Gallery Left */
+        .gallery {
+            position: sticky;
+            top: 100px
+        }
+
+        .gallery-main {
+            width: 100%;
+            aspect-ratio: 1;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 16px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            border: 1px solid var(--border-color)
+        }
+
+        .gallery-main img {
+            max-width: 85%;
+            max-height: 85%;
+            object-fit: contain;
+            transition: opacity .3s;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, .08))
+        }
+
+        .gallery-main model-viewer {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            --poster-color: transparent
+        }
+
+        .gallery-badge {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: var(--sea-blue);
+            color: #fff;
+            padding: 5px 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: .6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            border-radius: 6px;
+            z-index: 5
+        }
+
+        .gallery-badge.photo {
+            background: #6b7280
+        }
+
+        .gallery-3d-hint {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            display: flex;
+            gap: 10px;
+            z-index: 5
+        }
+
+        .gallery-3d-hint span {
+            font-size: .65rem;
+            color: var(--soft-grey);
+            font-family: 'Poppins', sans-serif;
+            background: rgba(255, 255, 255, .85);
+            padding: 4px 10px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px)
+        }
+
+        .gallery-thumbs {
+            display: flex;
+            gap: 10px;
+            margin-top: 14px;
+            flex-wrap: wrap
+        }
+
+        .gallery-thumb {
+            width: 72px;
+            height: 72px;
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            overflow: hidden;
+            cursor: pointer;
+            transition: all .2s;
+            background: #f8f9fa;
+            padding: 4px;
+            flex-shrink: 0
+        }
+
+        .gallery-thumb:hover {
+            border-color: var(--sea-blue)
+        }
+
+        .gallery-thumb.active {
+            border-color: var(--sea-blue);
+            box-shadow: 0 0 0 2px rgba(0, 108, 188, .2)
+        }
+
+        .gallery-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain
+        }
+
+        .gallery-thumb.thumb-3d {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--dark-sea-blue);
+            border-color: var(--dark-sea-blue)
+        }
+
+        .gallery-thumb.thumb-3d span {
+            color: #fff;
+            font-size: .55rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .05em
+        }
+
+        /* Info Right */
+        .product-info-panel {
+            padding-top: 10px
+        }
+
+        .product-info-panel .product-category {
+            font-family: 'Poppins', sans-serif;
+            font-size: .7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            color: var(--sea-blue);
+            margin-bottom: 8px
+        }
+
+        .product-info-panel h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-sea-blue);
+            margin-bottom: 14px;
+            line-height: 1.2
+        }
+
+        .product-info-panel .product-description {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            line-height: 1.75;
+            color: #444;
+            margin-bottom: 24px
+        }
+
+        /* Color Variants */
+        .variants-section {
+            margin-bottom: 28px
+        }
+
+        .variants-section h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: .75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--dark-sea-blue);
+            margin-bottom: 10px
+        }
+
+        .color-swatches {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap
+        }
+
+        .color-swatch {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all .2s;
+            font-family: 'Poppins', sans-serif;
+            font-size: .78rem;
+            font-weight: 500;
+            color: var(--dark-sea-blue);
+            background: #fff
+        }
+
+        .color-swatch:hover {
+            border-color: var(--sea-blue)
+        }
+
+        .color-swatch.active {
+            border-color: var(--sea-blue);
+            background: rgba(0, 108, 188, .04)
+        }
+
+        .color-dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, .1)
+        }
+
+        .color-dot.amarelo {
+            background: #f0c929
+        }
+
+        .color-dot.preto {
+            background: #1a1a1a
+        }
+
+        .color-dot.vermelho,
+        .color-dot.vermelha {
+            background: #dc2626
+        }
+
+        .color-dot.laranja {
+            background: #f97316
+        }
+
+        .color-dot.branco {
+            background: #f5f5f5;
+            border-color: #ccc
+        }
+
+        /* Specs Table */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 6px
+        }
+
+        .specs-table tr {
+            border-bottom: 1px solid var(--border-color)
+        }
+
+        .specs-table td {
+            padding: 12px 0;
+            font-family: 'Inter', sans-serif;
+            font-size: .9rem
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: var(--dark-sea-blue);
+            width: 40%;
+            font-family: 'Poppins', sans-serif;
+            font-size: .8rem;
+            text-transform: uppercase;
+            letter-spacing: .06em
+        }
+
+        .specs-table td:last-child {
+            color: #555
+        }
+
+        /* 3D Controls */
+        .viewer-controls-bar {
+            display: flex;
+            gap: 8px;
+            margin-top: 16px
+        }
+
+        .ctrl-btn {
+            background: #fff;
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            font-family: 'Poppins', sans-serif;
+            font-size: .72rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            color: var(--dark-sea-blue);
+            cursor: pointer;
+            transition: all .2s;
+            border-radius: 6px
+        }
+
+        .ctrl-btn:hover {
+            background: var(--dark-sea-blue);
+            color: #fff;
+            border-color: var(--dark-sea-blue)
+        }
+
+        .ctrl-btn.active {
+            background: var(--sea-blue);
+            color: #fff;
+            border-color: var(--sea-blue)
+        }
+
+        /* WhatsApp CTA */
+        .product-cta {
+            margin-top: 28px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .product-cta .btn-whatsapp-product {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #25D366;
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: .9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .2s
+        }
+
+        .product-cta .btn-whatsapp-product:hover {
+            background: #1da851;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, .3)
+        }
+
+        /* Responsive */
+        @media(max-width:900px) {
+            .detail-layout {
+                grid-template-columns: 1fr;
+                gap: 30px
+            }
+
+            .gallery {
+                position: static
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr))
+            }
+
+            .product-info-panel h2 {
+                font-size: 1.4rem
+            }
+
+            .download-banner {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+                margin: 0 16px 20px;
+                padding: 20px
+            }
+
+            .download-banner-info {
+                flex-direction: column
+            }
+        }
+
+        @media(max-width:480px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px
+            }
+
+            .gallery-thumbs {
+                gap: 6px
+            }
+
+            .gallery-thumb {
+                width: 56px;
+                height: 56px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="CNI Plásticos"></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">A Empresa</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Serviços <span style="font-size:.7em">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#usinagem">Usinagem</a></li>
+                            <li><a href="services.html#isoladores">Linha de Isoladores</a></li>
+                            <li><a href="services.html#outros">Niveladores &amp; Outros</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="produtos.html" class="active">Produtos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="btn-cta">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="catalog-hero">
+        <div class="container">
+            <div class="catalog-breadcrumb"><a href="index.html">Home</a><span>/</span>Produtos</div>
+            <h1>Nossos Produtos</h1>
+            <p>Linha completa de isoladores, acessórios para cerca elétrica e niveladores industriais.</p>
+        </div>
+    </section>
+
+    <!-- Download Banner -->
+    <div class="container">
+        <div class="download-banner">
+            <div class="download-banner-info">
+                <div class="download-banner-icon">📄</div>
+                <div class="download-banner-text">
+                    <h3>Catálogo Completo 2025/2026</h3>
+                    <p>Baixe nosso catálogo com todos os produtos, especificações técnicas e códigos.</p>
+                </div>
+            </div>
+            <a href="assets/downloads/catalogo-cni-2025-2026.pdf" download="Catalogo-CNI-2025-2026.pdf"
+                class="btn-download">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                </svg>
+                Baixar Catálogo PDF
+            </a>
+        </div>
+    </div>
+
+    <!-- Products Grid -->
+    <section class="products-section">
+        <div class="container" id="products-container"></div>
+    </section>
+
+    <!-- Product Detail (Shopify-style) -->
+    <section class="product-detail" id="product-detail">
+        <div class="container">
+            <div class="detail-layout">
+                <!-- Gallery Left -->
+                <div class="gallery">
+                    <div class="gallery-main" id="gallery-main">
+                        <span class="gallery-badge" id="gallery-badge">Foto do Produto</span>
+                        <img id="gallery-img" src="" alt="">
+                        <model-viewer id="gallery-3d" style="display:none" auto-rotate camera-controls
+                            shadow-intensity="1" tone-mapping="commerce" exposure="2.0" environment-image="legacy"
+                            shadow-softness="0.5" camera-orbit="0deg 75deg 105%"
+                            style="display:none;background-color:#f0f0f0;"></model-viewer>
+                        <div class="gallery-3d-hint" id="gallery-3d-hint" style="display:none">
+                            <span>🖱️ Arrastar: Girar</span>
+                            <span>🔍 Scroll: Zoom</span>
+                        </div>
+                    </div>
+                    <div class="gallery-thumbs" id="gallery-thumbs"></div>
+                    <div class="viewer-controls-bar" id="viewer-controls" style="display:none">
+                        <button class="ctrl-btn active" id="btn-rotate" onclick="toggleRotate()">Auto-Rotação</button>
+                        <button class="ctrl-btn" onclick="resetView()">Resetar Vista</button>
+                    </div>
+                </div>
+
+                <!-- Info Right -->
+                <div class="product-info-panel">
+                    <div class="product-category" id="p-category"></div>
+                    <h2 id="p-name"></h2>
+                    <p class="product-description" id="p-desc"></p>
+
+                    <div class="variants-section" id="variants-section" style="display:none">
+                        <h4>Cores Disponíveis</h4>
+                        <div class="color-swatches" id="color-swatches"></div>
+                    </div>
+
+                    <h4
+                        style="font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--dark-sea-blue);margin-bottom:10px">
+                        Especificações Técnicas</h4>
+                    <table class="specs-table">
+                        <tr>
+                            <td>Categoria</td>
+                            <td id="s-cat"></td>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td id="s-mat"></td>
+                        </tr>
+                        <tr>
+                            <td>Dimensão</td>
+                            <td id="s-dim"></td>
+                        </tr>
+                        <tr>
+                            <td>Peso</td>
+                            <td id="s-peso"></td>
+                        </tr>
+                    </table>
+
+                    <div class="product-cta">
+                        <a href="https://wa.me/554933291661" target="_blank" class="btn-whatsapp-product">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.637l4.603-1.208A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.387 0-4.597-.77-6.397-2.073l-.446-.333-3.262.856.87-3.178-.365-.58A9.964 9.964 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z" />
+                            </svg>
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="assets/images/logo-white.png" alt="CNI Plásticos" class="footer-logo">
+                <p>Indústria de materiais plásticos especializada em usinagem de precisão e injeção plástica. Fundada em
+                    2010 em Chapecó, SC.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/cniplasticos/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/cniplasticos" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">A Empresa</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="mailto:atendimento@cniplasticos.com.br">atendimento@cniplasticos.com.br</a></li>
+                    <li><a href="mailto:comercial@cniplasticos.com.br">comercial@cniplasticos.com.br</a></li>
+                    <li><a href="https://wa.me/554933291661" target="_blank">(49) 3329-1661</a></li>
+                    <li>R. Vitório Cella, 302-E</li>
+                    <li>São Cristóvão, Chapecó - SC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CNI Plásticos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/produtos-data.js"></script>
+    <script src="assets/js/produtos-app.js"></script>
+</body>
+
+</html>

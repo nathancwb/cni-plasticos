@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CNI Plásticos - Indústria de materiais plásticos, isoladores para cerca elétrica e componentes de engenharia.">
+    <title>CNI Plásticos | Usinagem e Injeção Plástica</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preload" as="image" href="assets/images/hero-bg.png">
+
+</head>
+
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <img id="splash-logo" src="assets/images/logo.png" alt="CNI Loading">
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="CNI Plásticos" style="opacity:0; transition: opacity 0.3s;">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">A Empresa</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Serviços <span style="font-size: 0.7em;">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html#usinagem">Usinagem</a></li>
+                            <li><a href="services.html#isoladores">Linha de Isoladores</a></li>
+                            <li><a href="services.html#outros">Niveladores & Outros</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="btn-cta">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <span class="hero-label">Usinagem &amp; Injeção Plástica</span>
+            <h1>Engenharia de Precisão <span>em Plásticos Industriais</span></h1>
+            <p class="hero-subtitle">Fabricação de isoladores para cerca elétrica, moldes e matrizes industriais
+                personalizadas. Atendemos 21 estados brasileiros e exportamos para Uruguai e Paraguai.</p>
+            <div class="hero-actions">
+                <a href="produtos.html" class="btn-primary">Ver Produtos</a>
+                <a href="#sobre" class="btn-outline">Conheça a CNI</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/images/hero-bg.png" alt="Fábrica de injeção plástica CNI" fetchpriority="high"
+                loading="eager">
+        </div>
+    </section>
+
+
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <strong>+15 Anos</strong>
+                <span>De experiência</span>
+            </div>
+            <div class="trust-item">
+                <strong>21 Estados</strong>
+                <span>Atendidos no Brasil</span>
+            </div>
+            <div class="trust-item">
+                <strong>Exportação</strong>
+                <span>Uruguai e Paraguai</span>
+            </div>
+            <div class="trust-item">
+                <strong>Qualidade</strong>
+                <span>Controle rigoroso</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <section id="sobre" class="section">
+        <div class="container split-layout">
+            <div class="text-content">
+                <span class="section-label">Sobre a CNI</span>
+                <h2 class="section-title">Compromisso com a Excelência Industrial</h2>
+                <p class="section-desc">Fundada em 2010, a CNI Plásticos é especialista na fabricação de isoladores para
+                    cerca elétrica rural e industrial, moldes e matrizes personalizadas, com foco na produção de
+                    componentes de engenharia de plásticos de alta performance.</p>
+                <ul class="feature-list">
+                    <li>
+                        <div class="feature-icon">01</div>
+                        <div class="feature-text">
+                            <strong>Qualidade Certificada</strong>
+                            <p>Processos rigorosos de controle em cada etapa da produção.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">02</div>
+                        <div class="feature-text">
+                            <strong>Sustentabilidade</strong>
+                            <p>Compromisso com materiais recicláveis e processos industriais limpos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="feature-icon">03</div>
+                        <div class="feature-text">
+                            <strong>Inovação Constante</strong>
+                            <p>Investimento contínuo em maquinário e capacitação técnica.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="image-content">
+                <img src="assets/images/about-factory.png" alt="Controle de qualidade CNI Plásticos"
+                    class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="servicos" class="section" style="background: var(--bg-section);">
+        <div class="container">
+            <span class="section-label">Nossos Serviços</span>
+            <h2 class="section-title">Soluções Completas em Plásticos</h2>
+            <p class="section-desc">Da concepção do projeto à entrega do produto final, oferecemos um ciclo completo de
+                serviços industriais.</p>
+            <div class="split-layout" style="margin-top: 48px;">
+                <div>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="feature-icon">U</div>
+                            <div class="feature-text">
+                                <strong>Usinagem de Precisão</strong>
+                                <p>Peças sob medida com tolerâncias rigorosas para aplicações industriais.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">I</div>
+                            <div class="feature-text">
+                                <strong>Injeção Plástica</strong>
+                                <p>Produção em série com qualidade consistente e alta produtividade.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="feature-list">
+                        <li>
+                            <div class="feature-icon">M</div>
+                            <div class="feature-text">
+                                <strong>Moldes e Matrizes</strong>
+                                <p>Desenvolvimento de ferramentais personalizados para sua necessidade.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="feature-icon">P</div>
+                            <div class="feature-text">
+                                <strong>Isoladores Elétricos</strong>
+                                <p>Linha completa de isoladores para cerca elétrica rural e industrial.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="section blog-preview">
+        <div class="container">
+            <span class="section-label">Notícias &amp; Artigos</span>
+            <h2 class="section-title">Fique por dentro do setor</h2>
+            <div class="blog-grid">
+                <!-- Blog Card 1 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blog/cnc-precision.png" alt="Usinagem de Precisão"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">12 Fev 2025</span>
+                        <h3 class="blog-title">A importância da Usinagem de Precisão na Indústria 4.0</h3>
+                        <p class="blog-excerpt">Como a tecnologia CNC está revolucionando a produção de peças técnicas.
+                        </p>
+                        <a href="blog.html" class="blog-link">Ler mais <i style="font-style:normal;">→</i></a>
+                    </div>
+                </article>
+                <!-- Blog Card 2 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blog/polymers.png" alt="Polímeros de Alta Performance"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">05 Fev 2025</span>
+                        <h3 class="blog-title">Novos Polímeros de Alta Performance</h3>
+                        <p class="blog-excerpt">Conheça os materiais que estão substituindo o metal em engrenagens
+                            industriais.</p>
+                        <a href="blog.html" class="blog-link">Ler mais <i style="font-style:normal;">→</i></a>
+                    </div>
+                </article>
+                <!-- Blog Card 3 -->
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/images/blog/mold-maintenance.png" alt="Manutenção de Moldes"
+                            style="width:100%; height:100%; object-fit:cover;">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">28 Jan 2025</span>
+                        <h3 class="blog-title">Manutenção de Moldes de Injeção</h3>
+                        <p class="blog-excerpt">Dicas essenciais para prolongar a vida útil do seu ferramental.</p>
+                        <a href="blog.html" class="blog-link">Ler mais <i style="font-style:normal;">→</i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Map -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="split-layout" style="gap:60px;">
+                <div class="contact-info">
+                    <span class="section-label">Fale Conosco</span>
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-desc">Estamos prontos para atender sua demanda industrial com agilidade e
+                        precisão.</p>
+
+                    <div class="info-item">
+                        <h4>Endereço</h4>
+                        <p>R. Vitório Cella, 302-E<br>Bairro São Cristóvão<br>Chapecó - SC, 89803-300</p>
+                    </div>
+
+                    <div class="info-item">
+                        <h4>Contato Direto</h4>
+                        <p>(49) 3329-1661</p>
+                        <p>comercial@cniplasticos.com.br</p>
+                    </div>
+
+                    <a href="https://wa.me/554933291661" target="_blank" class="btn-whatsapp">
+                        <span>Chamar no WhatsApp</span>
+                    </a>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" class="form-control" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail Corporativo</label>
+                            <input type="email" id="email" class="form-control" placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem ou Cotação</label>
+                            <textarea id="message" class="form-control"
+                                placeholder="Descreva sua necessidade..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width:100%;">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Google Maps Embed -->
+            <div class="map-container">
+                <iframe
+                    src="https://maps.google.com/maps?q=R.+Vit%C3%B3rio+Cella,+302-E,+Chapec%C3%B3+-+SC&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a href="https://www.google.com/maps/search/?api=1&query=R.+Vitório+Cella,+302-E,+Chapecó+-+SC"
+                    target="_blank" class="btn-text" style="display:inline-block; margin-top:10px; font-size: 0.9em;">
+                    <span style="margin-right:5px;">📍</span> Abrir no Google Maps
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contato" class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="assets/images/logo-white.png" alt="CNI Plásticos" class="footer-logo">
+                <p>Indústria de materiais plásticos especializada em usinagem de precisão e injeção plástica. Fundada em
+                    2010 em Chapecó, SC.</p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/cniplasticos/" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/cniplasticos" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#sobre">A Empresa</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul>
+                    <li><a href="mailto:atendimento@cniplasticos.com.br">atendimento@cniplasticos.com.br</a></li>
+                    <li><a href="mailto:comercial@cniplasticos.com.br">comercial@cniplasticos.com.br</a></li>
+                    <li><a href="https://wa.me/554933291661" target="_blank">(49) 3329-1661</a></li>
+                    <li>R. Vitório Cella, 302-E</li>
+                    <li>São Cristóvão, Chapecó - SC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CNI Plásticos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
