@@ -5,9 +5,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
             nav.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
         });
     }
+
+    // Mobile Dropdown Handle
+    const dropdowns = document.querySelectorAll('.dropdown > a');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdown.parentElement.classList.toggle('active');
+            }
+        });
+    });
 
     // Smooth Scrolling for Anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
