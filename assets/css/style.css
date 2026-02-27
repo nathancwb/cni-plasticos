@@ -647,6 +647,12 @@ model-viewer {
 
 @media (max-width: 768px) {
 
+    /* Remove backdrop blur on mobile header to prevent trapping position: fixed nav overlay */
+    .header {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
     /* Premium Full-Screen Mobile Menu */
     .nav {
         display: none !important;
