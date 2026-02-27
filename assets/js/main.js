@@ -5,19 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
-            if (nav.style.display === 'flex') {
-                nav.style.flexDirection = 'column';
-                nav.style.position = 'absolute';
-                nav.style.top = '80px';
-                nav.style.left = '0';
-                nav.style.width = '100%';
-                nav.style.background = 'white';
-                nav.style.padding = '20px';
-                nav.style.boxShadow = '0 10px 20px rgba(0,0,0,0.1)';
-            } else {
-                nav.removeAttribute('style'); // Clean up inline styles
-            }
+            nav.classList.toggle('active');
         });
     }
 

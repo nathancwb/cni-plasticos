@@ -2,6 +2,8 @@
 (function () {
     const container = document.getElementById('products-container');
     const detailSection = document.getElementById('product-detail');
+    const modalOverlay = document.getElementById('modal-overlay');
+    const modalClose = document.getElementById('modal-close');
     const galleryMain = document.getElementById('gallery-main');
     const galleryImg = document.getElementById('gallery-img');
     const gallery3d = document.getElementById('gallery-3d');
@@ -102,12 +104,24 @@
         buildThumbs();
         showMainImage(p.img);
 
-        // Show detail section
+        // Show modal
+        modalOverlay.classList.add('active');
         detailSection.classList.add('visible');
-        setTimeout(() => {
-            detailSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
+
+    function closeModal() {
+        modalOverlay.classList.remove('active');
+        detailSection.classList.remove('visible');
+        document.body.style.overflow = ''; // Restore scrolling
+        
+        // Remove active state from grid card
+        container.querySelectorAll('.grid-card').forEach(c => c.classList.remove('active'));
+    }
+
+    // Modal Close Events
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
 
     function showColorVariant(ci) {
         const p = currentProduct;
@@ -212,8 +226,5 @@
     // Initialize
     buildGrid();
 
-    // Auto-open first product
-    if (PRODUCTS.length > 0) {
-        openProduct(0);
-    }
+    // Auto-open removed for modal behavior
 })();
