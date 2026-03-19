@@ -1,10 +1,9 @@
-// CNI Plásticos — Produtos App Logic (Shopify-style)
+// CNI Plásticos — Produtos App Logic
 (function () {
-    const container = document.getElementById('products-container');
+    const viewArea = document.getElementById('products-view-area');
     const detailSection = document.getElementById('product-detail');
     const modalOverlay = document.getElementById('modal-overlay');
     const modalClose = document.getElementById('modal-close');
-    const galleryMain = document.getElementById('gallery-main');
     const galleryImg = document.getElementById('gallery-img');
     const gallery3d = document.getElementById('gallery-3d');
     const galleryBadge = document.getElementById('gallery-badge');
@@ -24,51 +23,106 @@
     const sPeso = document.getElementById('s-peso');
 
     let currentProduct = null;
-    let currentMode = 'photo'; // 'photo' or '3d'
 
-    // Build product grid grouped by category
-    function buildGrid() {
-        let currentCat = '';
-        let html = '';
+    const categoryIcons = {
+        'Isoladores Tipo W': '⚡',
+        'Roldanas Isoladoras': '⭕',
+        'Castanhas e Catracas': '⚙️',
+        'Ganchos Isoladores': '🪝',
+        'Acessórios para Cerca Elétrica': '🔌',
+        'Niveladores para Pisos': '📏'
+    };
+
+    // ─── Build full catalog: all categories + products on one page ───
+    function buildFullCatalog() {
+        // Group products by category preserving order
+        const categoryMap = {};
+        const categoryOrder = [];
         PRODUCTS.forEach((p, i) => {
-            if (p.cat !== currentCat) {
-                currentCat = p.cat;
-                html += `<div class="category-title">${currentCat}</div>`;
+            if (!categoryMap[p.cat]) {
+                categoryMap[p.cat] = [];
+                categoryOrder.push(p.cat);
             }
-            if (p.cat !== PRODUCTS[i > 0 ? i - 1 : 0].cat || i === 0) {
-                if (i > 0) html += '</div>';
-                html += '<div class="products-grid">';
-            }
-            html += `
-        <div class="grid-card" data-idx="${i}" id="card-${p.id}">
-          ${p.has3d ? '<span class="badge-3d">3D</span>' : ''}
-          <img class="grid-card-img" src="${p.img}" alt="${p.name}" loading="lazy">
-          <h3>${p.name}</h3>
-          <p>${p.specs.categoria}</p>
-        </div>`;
+            categoryMap[p.cat].push({ product: p, idx: i });
         });
-        html += '</div>';
-        container.innerHTML = html;
 
-        // Attach click handlers
-        container.querySelectorAll('.grid-card').forEach(card => {
-            card.addEventListener('click', () => {
-                const idx = parseInt(card.dataset.idx);
-                openProduct(idx);
-            });
+        // Build sticky category nav
+        let navHTML = '<div class="cat-nav" id="cat-nav">';
+        categoryOrder.forEach(cat => {
+            const slug = cat.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+            const icon = categoryIcons[cat] || '📦';
+            navHTML += `<a class="cat-nav-link" href="#cat-${slug}">${icon} ${cat}</a>`;
         });
+        navHTML += '</div>';
+
+        // Build each category section
+        let sectionsHTML = '';
+        categoryOrder.forEach(cat => {
+            const slug = cat.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+            const icon = categoryIcons[cat] || '📦';
+            const items = categoryMap[cat];
+
+            sectionsHTML += `
+            <div class="cat-section" id="cat-${slug}">
+                <div class="cat-section-header">
+                    <span class="cat-section-icon">${icon}</span>
+                    <h2 class="cat-section-title">${cat}</h2>
+                    <span class="cat-section-count">${items.length} produto${items.length > 1 ? 's' : ''}</span>
+                </div>
+                <div class="products-grid">`;
+
+            items.forEach(({ product: p, idx }) => {
+                sectionsHTML += `
+                    <div class="grid-card" data-idx="${idx}" id="card-${p.id}">
+                        ${p.has3d ? '<span class="badge-3d">3D</span>' : ''}
+                        <img class="grid-card-img" src="${p.img}" alt="${p.name}" loading="lazy">
+                        <h3>${p.name}</h3>
+                        <p>${p.specs.categoria}</p>
+                    </div>`;
+            });
+
+            sectionsHTML += `</div></div>`;
+        });
+
+        viewArea.innerHTML = navHTML + sectionsHTML;
+
+        // Attach card click handlers
+        viewArea.querySelectorAll('.grid-card').forEach(card => {
+            card.addEventListener('click', () => openProduct(parseInt(card.dataset.idx)));
+        });
+
+        // Sticky nav highlight on scroll
+        initNavHighlight();
+    }
+
+    // Highlight active category in nav on scroll
+    function initNavHighlight() {
+        const sections = viewArea.querySelectorAll('.cat-section');
+        const navLinks = viewArea.querySelectorAll('.cat-nav-link');
+        if (!sections.length || !navLinks.length) return;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navLinks.forEach(link => {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+                    });
+                }
+            });
+        }, { rootMargin: '-20% 0px -70% 0px' });
+
+        sections.forEach(s => observer.observe(s));
     }
 
     function openProduct(idx) {
         const p = PRODUCTS[idx];
         currentProduct = p;
 
-        // Update active card
-        container.querySelectorAll('.grid-card').forEach(c => c.classList.remove('active'));
+        viewArea.querySelectorAll('.grid-card').forEach(c => c.classList.remove('active'));
         const activeCard = document.getElementById('card-' + p.id);
         if (activeCard) activeCard.classList.add('active');
 
-        // Fill info
         pCategory.textContent = p.specs.categoria;
         pName.textContent = p.name;
         pDesc.textContent = p.desc;
@@ -77,49 +131,41 @@
         sDim.textContent = p.specs.dimensao;
         sPeso.textContent = p.specs.peso;
 
-        // Color variants
         if (p.colors && p.colors.length > 0) {
             variantsSection.style.display = 'block';
             let swatchHTML = '';
             p.colors.forEach((c, ci) => {
                 swatchHTML += `<button class="color-swatch${ci === 0 ? ' active' : ''}" data-color="${ci}">
-          <span class="color-dot ${c.class}"></span>${c.name}
-        </button>`;
+                    <span class="color-dot ${c.class}"></span>${c.name}
+                </button>`;
             });
             colorSwatches.innerHTML = swatchHTML;
             colorSwatches.querySelectorAll('.color-swatch').forEach(btn => {
                 btn.addEventListener('click', () => {
-                    const ci = parseInt(btn.dataset.color);
                     colorSwatches.querySelectorAll('.color-swatch').forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
-                    showColorVariant(ci);
+                    showColorVariant(parseInt(btn.dataset.color));
                 });
             });
         } else {
             variantsSection.style.display = 'none';
         }
 
-        // Show gallery — default to photo mode
-        currentMode = 'photo';
         buildThumbs();
         showMainImage(p.img);
 
-        // Show modal
         modalOverlay.classList.add('active');
         detailSection.classList.add('visible');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
         modalOverlay.classList.remove('active');
         detailSection.classList.remove('visible');
-        document.body.style.overflow = ''; // Restore scrolling
-        
-        // Remove active state from grid card
-        container.querySelectorAll('.grid-card').forEach(c => c.classList.remove('active'));
+        document.body.style.overflow = '';
+        viewArea.querySelectorAll('.grid-card').forEach(c => c.classList.remove('active'));
     }
 
-    // Modal Close Events
     modalClose.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', closeModal);
 
@@ -127,13 +173,9 @@
         const p = currentProduct;
         if (!p.colors || !p.colors[ci]) return;
         const color = p.colors[ci];
-        currentMode = 'photo';
         buildThumbs(ci);
-        if (color.imgs && color.imgs.length > 0) {
-            showMainImage(color.imgs[0]);
-        } else {
-            showMainImage(p.img);
-        }
+        if (color.imgs && color.imgs.length > 0) showMainImage(color.imgs[0]);
+        else showMainImage(p.img);
     }
 
     function buildThumbs(colorIdx) {
@@ -141,39 +183,42 @@
         let html = '';
         const ci = colorIdx !== undefined ? colorIdx : 0;
 
-        // 3D thumb if available
         if (p.has3d) {
             html += `<div class="gallery-thumb thumb-3d" data-action="3d"><span>🎲 3D</span></div>`;
         }
 
-        // Main product image
-        html += `<div class="gallery-thumb active" data-action="img" data-src="${p.img}">
-      <img src="${p.img}" alt="${p.name}">
-    </div>`;
+        const mainImg = (p.imgs && p.imgs.length > 0) ? p.imgs[0] :
+                        (p.colors && p.colors[ci] && p.colors[ci].imgs && p.colors[ci].imgs.length > 0) ? p.colors[ci].imgs[0] :
+                        p.img;
 
-        // Color variant images
-        if (p.colors && p.colors[ci] && p.colors[ci].imgs) {
-            p.colors[ci].imgs.forEach(imgSrc => {
-                html += `<div class="gallery-thumb" data-action="img" data-src="${imgSrc}">
-          <img src="${imgSrc}" alt="${p.name}">
+        html += `<div class="gallery-thumb active" data-action="img" data-src="${mainImg}">
+            <img src="${mainImg}" alt="${p.name}">
         </div>`;
+
+        if (p.colors && p.colors[ci] && p.colors[ci].imgs) {
+            p.colors[ci].imgs.forEach((imgSrc, i) => {
+                if (i === 0) return;
+                html += `<div class="gallery-thumb" data-action="img" data-src="${imgSrc}">
+                    <img src="${imgSrc}" alt="${p.name}">
+                </div>`;
+            });
+        } else if (p.imgs && p.imgs.length > 1) {
+            p.imgs.forEach((imgSrc, i) => {
+                if (i === 0) return;
+                html += `<div class="gallery-thumb" data-action="img" data-src="${imgSrc}">
+                    <img src="${imgSrc}" alt="${p.name}">
+                </div>`;
             });
         }
 
         galleryThumbs.innerHTML = html;
 
-        // Attach thumb click handlers
         galleryThumbs.querySelectorAll('.gallery-thumb').forEach(thumb => {
             thumb.addEventListener('click', () => {
                 galleryThumbs.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
                 thumb.classList.add('active');
-
-                if (thumb.dataset.action === '3d') {
-                    show3D();
-                } else {
-                    currentMode = 'photo';
-                    showMainImage(thumb.dataset.src);
-                }
+                if (thumb.dataset.action === '3d') show3D();
+                else showMainImage(thumb.dataset.src);
             });
         });
     }
@@ -192,7 +237,6 @@
     function show3D() {
         const p = currentProduct;
         if (!p || !p.has3d) return;
-        currentMode = '3d';
         galleryImg.style.display = 'none';
         gallery3d.style.display = 'block';
         gallery3d.src = p.model;
@@ -204,9 +248,14 @@
         viewerControls.style.display = 'flex';
         btnRotate.classList.add('active');
         btnRotate.textContent = 'Auto-Rotação';
+        gallery3d.interactionPrompt = 'none';
+        gallery3d.addEventListener('click', (event) => {
+            if (window.innerWidth > 900) return;
+            const hit = event.target.positionAndNormalFromPoint(event.clientX, event.clientY);
+            if (hit) event.target.cameraTarget = `${hit.position.x}m ${hit.position.y}m ${hit.position.z}m`;
+        });
     }
 
-    // 3D controls
     window.toggleRotate = function () {
         if (gallery3d.autoRotate) {
             gallery3d.autoRotate = false;
@@ -224,7 +273,5 @@
     };
 
     // Initialize
-    buildGrid();
-
-    // Auto-open removed for modal behavior
+    buildFullCatalog();
 })();

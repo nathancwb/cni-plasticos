@@ -1,4 +1,3 @@
-// CNI Plásticos — Product Data
 const PRODUCTS = [
   {
     "id": "w-tradicional",
@@ -11,15 +10,36 @@ const PRODUCTS = [
       "dimensao": "45mm",
       "peso": "14g"
     },
-    "img": "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-b-copia-2.jpg",
-    "has3d": true,
-    "model": "assets/models/10.glb",
+    "img": "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-a.jpg",
     "colors": [
       {
-        "name": "Isolador W Para Cerca Eletrica Tradicional Amarelo B Copia",
-        "class": "isolador-w-para-cerca-eletrica-tradicional-amarelo-b-copia",
+        "name": "Amarelo",
+        "class": "amarelo",
         "imgs": [
-          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-b-copia-2.jpg"
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-a.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-aa.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-ac.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-aca.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-b-copia-2.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-b-copia.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-b.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-bc.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-c.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-ca-copia.jpg"
+        ]
+      },
+      {
+        "name": "Preto",
+        "class": "preto",
+        "imgs": [
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-aa-copia.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-aa.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-aac-copia.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-aac.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-ac.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-b.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-bc.jpg",
+          "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-preto-c.jpg"
         ]
       }
     ]
@@ -36,8 +56,25 @@ const PRODUCTS = [
       "peso": "18g"
     },
     "img": "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-0c.jpg",
-    "has3d": true,
-    "model": "assets/models/07.glb"
+    "imgs": [
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-0c.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-a.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-ac.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-aca.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-acb.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-b.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-bc.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo-com-parafuso-png.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-amarelo.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-preto-a.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-preto-ac.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-preto-acb.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-preto-acd.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-preto-b.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-preto-bc.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-preto.jpg",
+      "assets/images/products/variants/w-reforcado/isolador-w-para-cerca-eletrica-reforcado-pretoc.jpg"
+    ]
   },
   {
     "id": "w-economico",
@@ -50,35 +87,37 @@ const PRODUCTS = [
       "dimensao": "42mm",
       "peso": "10g"
     },
-    "img": "assets/images/products/variants/w-economico/350-menos-1.jpg",
+    "img": "assets/images/products/variants/w-economico/1554-1591-isolador-w-para-cerca-eletrica-economico-amarelo-cn.jpg",
     "colors": [
       {
-        "name": "350 Menos",
-        "class": "350-menos",
+        "name": "Amarelo",
+        "class": "amarelo",
         "imgs": [
-          "assets/images/products/variants/w-economico/350-menos-1.jpg",
-          "assets/images/products/variants/w-economico/350-menos-10.jpg",
-          "assets/images/products/variants/w-economico/350-menos-11.jpg",
-          "assets/images/products/variants/w-economico/350-menos-12.jpg",
-          "assets/images/products/variants/w-economico/350-menos-13.jpg",
-          "assets/images/products/variants/w-economico/350-menos-14.jpg",
-          "assets/images/products/variants/w-economico/350-menos-15.jpg",
-          "assets/images/products/variants/w-economico/350-menos-16.jpg",
-          "assets/images/products/variants/w-economico/350-menos-2.jpg",
-          "assets/images/products/variants/w-economico/350-menos-3.jpg",
-          "assets/images/products/variants/w-economico/350-menos-4.jpg",
-          "assets/images/products/variants/w-economico/350-menos-5.jpg",
-          "assets/images/products/variants/w-economico/350-menos-6.jpg",
-          "assets/images/products/variants/w-economico/350-menos-7.jpg",
-          "assets/images/products/variants/w-economico/350-menos-8.jpg",
-          "assets/images/products/variants/w-economico/350-menos-9.jpg"
+          "assets/images/products/variants/w-economico/1554-1591-isolador-w-para-cerca-eletrica-economico-amarelo-cn.jpg",
+          "assets/images/products/variants/w-economico/200-isolador-w-para-cerca-eletrica-economico-amarelo.jpg",
+          "assets/images/products/variants/w-economico/500-isolador-w-para-cerca-eletrica-economico-amarelo.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo-a.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo-b-a.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo-b.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo-c-copia.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo-c.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo-cc.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo-cn.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-amarelo.jpg"
         ]
       },
       {
-        "name": "Isolador W Para Cerca Eletrica Economico Preto A",
-        "class": "isolador-w-para-cerca-eletrica-economico-preto-a",
+        "name": "Preto",
+        "class": "preto",
         "imgs": [
-          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-preto-a-2.jpg"
+          "assets/images/products/variants/w-economico/200-isolador-w-para-cerca-eletrica-economico-preto.jpg",
+          "assets/images/products/variants/w-economico/500-isolador-w-para-cerca-eletrica-economico-preto.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-preto-a-2.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-preto-a.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-preto-ac.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-preto-b.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-preto-bcc.jpg",
+          "assets/images/products/variants/w-economico/isolador-w-para-cerca-eletrica-economico-preto.jpg"
         ]
       }
     ]
@@ -94,34 +133,28 @@ const PRODUCTS = [
       "dimensao": "36mm",
       "peso": "20g"
     },
-    "img": "assets/images/products/variants/roldana-36/350-menos-1.jpg",
+    "img": "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-0c.jpg",
     "has3d": true,
     "model": "assets/models/09.glb",
-    "colors": [
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/roldana-36/350-menos-1.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-10.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-11.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-12.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-13.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-14.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-15.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-16.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-17.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-18.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-2.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-3.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-4.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-5.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-6.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-7.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-8.jpg",
-          "assets/images/products/variants/roldana-36/350-menos-9.jpg"
-        ]
-      }
+    "imgs": [
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-0c.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-0cb.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-a.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-ac.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-b.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-bc.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-expo.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amareloc.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-a-copia.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-a.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-b.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-bc.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-bcb.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-bcc.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-copia.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto-u.jpg",
+      "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-preto.jpg"
     ]
   },
   {
@@ -135,36 +168,26 @@ const PRODUCTS = [
       "dimensao": "24mm",
       "peso": "12g"
     },
-    "img": "assets/images/products/variants/roldana-24/roldanas-001.jpg",
-    "colors": [
-      {
-        "name": "Roldanas",
-        "class": "roldanas",
-        "imgs": [
-          "assets/images/products/variants/roldana-24/roldanas-001.jpg",
-          "assets/images/products/variants/roldana-24/roldanas-002.jpg",
-          "assets/images/products/variants/roldana-24/roldanas-003.jpg",
-          "assets/images/products/variants/roldana-24/roldanas-004.jpg",
-          "assets/images/products/variants/roldana-24/roldanas-005.jpg",
-          "assets/images/products/variants/roldana-24/roldanas-006.jpg",
-          "assets/images/products/variants/roldana-24/roldanas-02.jpg",
-          "assets/images/products/variants/roldana-24/roldanas-03.jpg"
-        ]
-      },
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/roldana-24/350-menos-1.jpg",
-          "assets/images/products/variants/roldana-24/350-menos-2.jpg",
-          "assets/images/products/variants/roldana-24/350-menos-3.jpg",
-          "assets/images/products/variants/roldana-24/350-menos-4.jpg",
-          "assets/images/products/variants/roldana-24/350-menos-5.jpg",
-          "assets/images/products/variants/roldana-24/350-menos-6.jpg",
-          "assets/images/products/variants/roldana-24/350-menos-7.jpg",
-          "assets/images/products/variants/roldana-24/350-menos-8.jpg"
-        ]
-      }
+    "img": "assets/images/products/variants/roldana-24/imagem-amazon.jpg",
+    "imgs": [
+      "assets/images/products/variants/roldana-24/imagem-amazon.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-a-copia.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-a.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-b-copia.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-b.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-bc-copia.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-copia.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto.jpg",
+      "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-pretoc.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-001.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-002.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-003.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-004.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-005.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-006.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-02.jpg",
+      "assets/images/products/variants/roldana-24/roldanas-03.jpg",
+      "assets/images/products/variants/roldana-24/roldanas.jpg"
     ]
   },
   {
@@ -178,35 +201,36 @@ const PRODUCTS = [
       "dimensao": "30mm",
       "peso": "16g"
     },
-    "img": "assets/images/products/variants/roldana-30/350-menos-1.jpg",
+    "img": "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-0c-2.jpg",
+    "has3d": true,
+    "model": "assets/models/10.glb",
     "colors": [
       {
-        "name": "350 Menos",
-        "class": "350-menos",
+        "name": "Preto",
+        "class": "preto",
         "imgs": [
-          "assets/images/products/variants/roldana-30/350-menos-1.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-10.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-11.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-12.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-13.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-14.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-15.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-16.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-2.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-3.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-4.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-5.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-6.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-7.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-8.jpg",
-          "assets/images/products/variants/roldana-30/350-menos-9.jpg"
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-0c-2.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-0c.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-a.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-ac.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-acb.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-acc.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-pretoc.jpg"
         ]
       },
       {
-        "name": "Isolador Roldana Cerca Eletrica 30 Preto 0c",
-        "class": "isolador-roldana-cerca-eletrica-30-preto-0c",
+        "name": "Amarelo",
+        "class": "amarelo",
         "imgs": [
-          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-0c-2.jpg"
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo-0c.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo-a.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo-ac.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo-acb.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo-acc.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo-b.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo-bc.jpg",
+          "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-amarelo.jpg"
         ]
       }
     ]
@@ -222,7 +246,18 @@ const PRODUCTS = [
       "dimensao": "30mm",
       "peso": "16g"
     },
-    "img": "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja1.jpg"
+    "img": "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja1.jpg",
+    "imgs": [
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja1.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja2.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja3.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja4.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-0c.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-a.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-b.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-bc.jpg",
+      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo.jpg"
+    ]
   },
   {
     "id": "roldana-40-garra",
@@ -235,30 +270,24 @@ const PRODUCTS = [
       "dimensao": "40mm",
       "peso": "22g"
     },
-    "img": "assets/images/products/variants/roldana-40-garra/350-menos-1.jpg",
-    "colors": [
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/roldana-40-garra/350-menos-1.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-10.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-11.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-12.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-13.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-14.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-15.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-16.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-2.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-3.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-4.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-5.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-6.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-7.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-8.jpg",
-          "assets/images/products/variants/roldana-40-garra/350-menos-9.jpg"
-        ]
-      }
+    "img": "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-a.jpg",
+    "imgs": [
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-a.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-ac.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-acb.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-b.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-bc.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-bcc.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amareloc.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-preto-a-copia.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-preto-a.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-preto-b-copia.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-preto-b-copiac.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-preto-b.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-preto-bc.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-preto.jpg",
+      "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-pretoc.jpg"
     ]
   },
   {
@@ -272,15 +301,10 @@ const PRODUCTS = [
       "dimensao": "48mm",
       "peso": "28g"
     },
-    "img": "assets/images/products/variants/roldana-48/untitled-1.jpg",
-    "colors": [
-      {
-        "name": "Untitled",
-        "class": "untitled",
-        "imgs": [
-          "assets/images/products/variants/roldana-48/untitled-1.jpg"
-        ]
-      }
+    "img": "assets/images/products/variants/roldana-48/roldana-48-amarelo.jpg",
+    "imgs": [
+      "assets/images/products/variants/roldana-48/roldana-48-amarelo.jpg",
+      "assets/images/products/variants/roldana-48/untitled-1.jpg"
     ]
   },
   {
@@ -299,40 +323,34 @@ const PRODUCTS = [
     "model": "assets/models/02.glb",
     "colors": [
       {
-        "name": "Isolador Castanha Cerca Eletrica Preto",
-        "class": "isolador-castanha-cerca-eletrica-preto",
+        "name": "Preto",
+        "class": "preto",
         "imgs": [
-          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-2023.jpg"
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-2023.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-a.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-ac.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-b.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-bc-copia.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-bc.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-cc.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto-copia.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-preto.jpg"
         ]
       },
       {
-        "name": "350 Menos",
-        "class": "350-menos",
+        "name": "Amarelo",
+        "class": "amarelo",
         "imgs": [
-          "assets/images/products/variants/castanha/350-menos-1.jpg",
-          "assets/images/products/variants/castanha/350-menos-10.jpg",
-          "assets/images/products/variants/castanha/350-menos-11.jpg",
-          "assets/images/products/variants/castanha/350-menos-12.jpg",
-          "assets/images/products/variants/castanha/350-menos-13.jpg",
-          "assets/images/products/variants/castanha/350-menos-14.jpg",
-          "assets/images/products/variants/castanha/350-menos-15.jpg",
-          "assets/images/products/variants/castanha/350-menos-16.jpg",
-          "assets/images/products/variants/castanha/350-menos-17.jpg",
-          "assets/images/products/variants/castanha/350-menos-2.jpg",
-          "assets/images/products/variants/castanha/350-menos-3.jpg",
-          "assets/images/products/variants/castanha/350-menos-4.jpg",
-          "assets/images/products/variants/castanha/350-menos-5.jpg",
-          "assets/images/products/variants/castanha/350-menos-6.jpg",
-          "assets/images/products/variants/castanha/350-menos-7.jpg",
-          "assets/images/products/variants/castanha/350-menos-8.jpg",
-          "assets/images/products/variants/castanha/350-menos-9.jpg"
-        ]
-      },
-      {
-        "name": "Isolador Castanha Cerca Eletrica Amarelo",
-        "class": "isolador-castanha-cerca-eletrica-amarelo",
-        "imgs": [
-          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-2023.jpg"
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-2023.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-a.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-ac-copia.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-ac.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-b.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-bc-copia.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-bc.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-cc.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo-u.jpg",
+          "assets/images/products/variants/castanha/isolador-castanha-cerca-eletrica-amarelo.jpg"
         ]
       }
     ]
@@ -415,21 +433,6 @@ const PRODUCTS = [
         ]
       },
       {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/catraca-isolada/350-menos-1.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-2.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-3.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-4.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-5.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-6.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-7.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-8.jpg",
-          "assets/images/products/variants/catraca-isolada/350-menos-9.jpg"
-        ]
-      },
-      {
         "name": "Catraca Nova Menor",
         "class": "catraca-nova-menor",
         "imgs": [
@@ -455,7 +458,9 @@ const PRODUCTS = [
           "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-5.jpg",
           "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-6.jpg",
           "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-7.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-8.jpg"
+          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-8.jpg",
+          "assets/images/products/variants/catraca-isolada/10-catraca-isolada-cerca-eletrica-rural.jpg",
+          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural.jpg"
         ]
       }
     ]
@@ -514,7 +519,12 @@ const PRODUCTS = [
           "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-5.jpg",
           "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-6.jpg",
           "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-7.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-8.jpg"
+          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-8.jpg",
+          "assets/images/products/variants/catraca-lisa/12-catraca-esticadora-reforcada.jpg",
+          "assets/images/products/variants/catraca-lisa/5-catraca-esticadora-reforcada.jpg",
+          "assets/images/products/variants/catraca-lisa/9-catraca-esticadora-reforcada.jpg",
+          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-png.jpg",
+          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-png-copia.jpg"
         ]
       }
     ]
@@ -531,62 +541,58 @@ const PRODUCTS = [
       "peso": "18g"
     },
     "img": "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg",
-    "colors": [
-      {
-        "name": "Gancho Novo 7cm",
-        "class": "gancho-novo-7cm",
-        "imgs": [
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-10.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-11.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-12.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-13.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-14.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-15.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-16.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-17.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-18.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-19.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-2.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-20.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-21.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-22.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-23.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-24.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-25.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-26.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-27.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-28.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-29.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-3.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-30.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-31.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-32.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-33.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-34.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-35.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-36.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-37.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-38.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-39.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-4.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-40.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-41.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-42.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-43.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-44.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-45.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-46.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-47.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-48.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-5.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-6.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-7.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-8.jpg",
-          "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-9.jpg"
-        ]
-      }
-    ]
+    "imgs": [
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-10.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-11.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-12.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-13.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-14.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-15.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-16.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-17.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-18.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-19.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-2.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-20.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-21.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-22.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-23.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-24.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-25.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-26.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-27.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-28.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-29.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-3.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-30.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-31.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-32.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-33.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-34.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-35.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-36.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-37.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-38.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-39.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-4.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-40.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-41.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-42.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-43.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-44.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-45.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-46.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-47.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-48.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-5.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-6.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-7.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-8.jpg",
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-9.jpg"
+    ],
+    "has3d": true,
+    "model": "assets/models/07.glb"
   },
   {
     "id": "gancho-9cm",
@@ -599,27 +605,24 @@ const PRODUCTS = [
       "dimensao": "9cm",
       "peso": "22g"
     },
-    "img": "assets/images/products/variants/gancho-9-cm/350-menos-1.jpg",
-    "colors": [
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/gancho-9-cm/350-menos-1.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-10.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-11.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-12.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-13.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-2.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-3.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-4.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-5.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-6.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-7.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-8.jpg",
-          "assets/images/products/variants/gancho-9-cm/350-menos-9.jpg"
-        ]
-      }
+    "img": "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-0c.jpg",
+    "imgs": [
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-0c.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-a-copia.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-a-p.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-a.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-b-copia.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-b.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-c.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto-a-copia.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto-a.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto-b-copia.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto-b-p.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto-b.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto-bc.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto-d.jpg",
+      "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-preto.jpg"
     ]
   },
   {
@@ -633,32 +636,28 @@ const PRODUCTS = [
       "dimensao": "19cm",
       "peso": "32g"
     },
-    "img": "assets/images/products/variants/gancho-19-cm/350-menos-1.jpg",
-    "colors": [
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/gancho-19-cm/350-menos-1.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-10.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-11.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-12.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-13.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-14.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-15.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-16.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-17.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-2.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-3.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-4.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-5.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-6.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-7.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-8.jpg",
-          "assets/images/products/variants/gancho-19-cm/350-menos-9.jpg"
-        ]
-      }
-    ]
+    "img": "assets/images/products/variants/gancho-19-cm/isolador-gancho-afastador-9cm-preto-d.jpg",
+    "imgs": [
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-afastador-9cm-preto-d.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-a.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-a-copia.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-a.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-u.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-b.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-c.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-copia.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a-copia.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a-u.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-ac.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-b.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-bc.jpg",
+      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-c.jpg"
+    ],
+    "has3d": true,
+    "model": "assets/models/06.glb"
   },
   {
     "id": "gancho-cni",
@@ -747,27 +746,6 @@ const PRODUCTS = [
         ]
       },
       {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/chave-interruptora/350-menos-1.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-10.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-11.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-12.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-13.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-14.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-15.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-2.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-3.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-4.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-5.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-6.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-7.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-8.jpg",
-          "assets/images/products/variants/chave-interruptora/350-menos-9.jpg"
-        ]
-      },
-      {
         "name": "Vermelha",
         "class": "vermelha",
         "imgs": [
@@ -804,8 +782,6 @@ const PRODUCTS = [
       "peso": "15g"
     },
     "img": "assets/images/products/variants/isolador-prego/reforcado-1.jpg",
-    "has3d": true,
-    "model": "assets/models/06.glb",
     "colors": [
       {
         "name": "Reforcado",
@@ -869,40 +845,33 @@ const PRODUCTS = [
     "img": "assets/images/products/variants/engate/shopee-1.jpg",
     "colors": [
       {
-        "name": "Shopee",
+        "name": "Natural",
         "class": "shopee",
         "imgs": [
           "assets/images/products/variants/engate/shopee-1.jpg",
           "assets/images/products/variants/engate/shopee-2.jpg",
-          "assets/images/products/variants/engate/shopee-3.jpg"
+          "assets/images/products/variants/engate/shopee-3.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-a.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-aa.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-ac.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-aca.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-b.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-ba.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-bc.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-bca.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural.jpg"
         ]
       },
       {
-        "name": "350 Menos",
-        "class": "350-menos",
+        "name": "Preto",
+        "class": "preto",
         "imgs": [
-          "assets/images/products/variants/engate/350-menos-1.jpg",
-          "assets/images/products/variants/engate/350-menos-10.jpg",
-          "assets/images/products/variants/engate/350-menos-11.jpg",
-          "assets/images/products/variants/engate/350-menos-12.jpg",
-          "assets/images/products/variants/engate/350-menos-13.jpg",
-          "assets/images/products/variants/engate/350-menos-14.jpg",
-          "assets/images/products/variants/engate/350-menos-15.jpg",
-          "assets/images/products/variants/engate/350-menos-2.jpg",
-          "assets/images/products/variants/engate/350-menos-3.jpg",
-          "assets/images/products/variants/engate/350-menos-4.jpg",
-          "assets/images/products/variants/engate/350-menos-5.jpg",
-          "assets/images/products/variants/engate/350-menos-6.jpg",
-          "assets/images/products/variants/engate/350-menos-7.jpg",
-          "assets/images/products/variants/engate/350-menos-8.jpg",
-          "assets/images/products/variants/engate/350-menos-9.jpg"
-        ]
-      },
-      {
-        "name": "Engate Batente Porteira Cerca Eletrica Rural Preto A Copia",
-        "class": "engate-batente-porteira-cerca-eletrica-rural-preto-a-copia",
-        "imgs": [
-          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-a-copia-2.jpg"
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-a-copia-2.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-a-copia.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-b-copia.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-b.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-copia.jpg",
+          "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto.jpg"
         ]
       }
     ]
@@ -919,20 +888,15 @@ const PRODUCTS = [
       "peso": "30g"
     },
     "img": "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-2.jpg",
-    "colors": [
-      {
-        "name": "Tubo Isolador Reforcado Cerca Eletrica Rural",
-        "class": "tubo-isolador-reforcado-cerca-eletrica-rural",
-        "imgs": [
-          "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-2.jpg",
-          "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-3.jpg",
-          "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-4.jpg",
-          "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-5.jpg",
-          "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-6.jpg",
-          "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-7.jpg",
-          "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-8.jpg"
-        ]
-      }
+    "imgs": [
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-2.jpg",
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-3.jpg",
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-4.jpg",
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-5.jpg",
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-6.jpg",
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-7.jpg",
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-8.jpg",
+      "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural.jpg"
     ]
   },
   {
@@ -946,34 +910,8 @@ const PRODUCTS = [
       "dimensao": "40mm",
       "peso": "12g"
     },
-    "img": "assets/images/products/variants/vergalhao/350-menos-1.jpg",
+    "img": "assets/images/products/variants/vergalhao/preto-1.jpg",
     "colors": [
-      {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/vergalhao/350-menos-1.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-10.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-11.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-12.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-13.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-14.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-15.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-16.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-17.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-18.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-19.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-2.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-20.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-3.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-4.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-5.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-6.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-7.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-8.jpg",
-          "assets/images/products/variants/vergalhao/350-menos-9.jpg"
-        ]
-      },
       {
         "name": "Preto",
         "class": "preto",
@@ -1001,7 +939,10 @@ const PRODUCTS = [
           "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica-5.jpg",
           "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica-6.jpg",
           "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica-7.jpg",
-          "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica-8.jpg"
+          "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica-8.jpg",
+          "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica.jpg",
+          "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica-c.jpg",
+          "assets/images/products/variants/vergalhao/isolador-guia-vergalhao-piquete-cerca-eletrica-2c.jpg"
         ]
       }
     ]
@@ -1020,41 +961,35 @@ const PRODUCTS = [
     "img": "assets/images/products/variants/haste/gancho-19-001.jpg",
     "colors": [
       {
-        "name": "Gancho 19",
+        "name": "Gancho 19cm",
         "class": "gancho-19",
         "imgs": [
+          "assets/images/products/variants/haste/gancho-19-001-copia.jpg",
           "assets/images/products/variants/haste/gancho-19-001.jpg",
           "assets/images/products/variants/haste/gancho-19-002.jpg",
           "assets/images/products/variants/haste/gancho-19-003.jpg"
         ]
       },
       {
-        "name": "350 Menos",
-        "class": "350-menos",
-        "imgs": [
-          "assets/images/products/variants/haste/350-menos-1.jpg",
-          "assets/images/products/variants/haste/350-menos-2.jpg",
-          "assets/images/products/variants/haste/350-menos-3.jpg",
-          "assets/images/products/variants/haste/350-menos-4.jpg",
-          "assets/images/products/variants/haste/350-menos-5.jpg",
-          "assets/images/products/variants/haste/350-menos-6.jpg"
-        ]
-      },
-      {
-        "name": "Haste Para Cerca Eletrica 120cm 6 Isoladores",
+        "name": "Haste 120cm – 6 Isoladores",
         "class": "haste-para-cerca-eletrica-120cm-6-isoladores",
         "imgs": [
           "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-001.jpg",
           "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-002.jpg",
           "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-003.jpg",
-          "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-2.jpg"
+          "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-2.jpg",
+          "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores.jpg",
+          "assets/images/products/variants/haste/haste-para-cerca-eletrica-aco.jpg"
         ]
       },
       {
-        "name": "Haste Para Cerca Eletrica 116cm 6 Isoladores",
+        "name": "Haste 116cm – 6 Isoladores",
         "class": "haste-para-cerca-eletrica-116cm-6-isoladores",
         "imgs": [
-          "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-003.jpg"
+          "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-003-copia.jpg",
+          "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-003.jpg",
+          "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-a.jpg",
+          "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-b.jpg"
         ]
       }
     ]
@@ -1361,7 +1296,10 @@ const PRODUCTS = [
       "dimensao": "--",
       "peso": "Variável"
     },
-    "img": "assets/images/products/variants/fio-eletropl-astico/d-nq-np-2x-710111-mlb31129242206-062019-f.jpg"
+    "img": "assets/images/products/variants/fio-eletropl-astico/d-nq-np-2x-710111-mlb31129242206-062019-f.jpg",
+    "imgs": [
+      "assets/images/products/variants/fio-eletropl-astico/d-nq-np-2x-710111-mlb31129242206-062019-f.jpg"
+    ]
   },
   {
     "id": "batoque",
@@ -1383,7 +1321,10 @@ const PRODUCTS = [
           "assets/images/products/variants/batoque/20240523-141244.jpg",
           "assets/images/products/variants/batoque/20240523-141329.jpg",
           "assets/images/products/variants/batoque/20240523-141333.jpg",
-          "assets/images/products/variants/batoque/20240523-141454.jpg"
+          "assets/images/products/variants/batoque/20240523-141454.jpg",
+          "assets/images/products/variants/batoque/capa-batoque-branco.jpg",
+          "assets/images/products/variants/batoque/capa-batque-amarelo.jpg",
+          "assets/images/products/variants/batoque/segunda-foto-para-batoque.jpg"
         ]
       },
       {
@@ -1424,7 +1365,7 @@ const PRODUCTS = [
     "img": "assets/images/products/variants/clip/secund-arios-1.jpg",
     "colors": [
       {
-        "name": "Secund Arios",
+        "name": "Nivelador Clip",
         "class": "secund-arios",
         "imgs": [
           "assets/images/products/variants/clip/secund-arios-1.jpg",
@@ -1433,11 +1374,19 @@ const PRODUCTS = [
           "assets/images/products/variants/clip/secund-arios-4.jpg",
           "assets/images/products/variants/clip/secund-arios-5.jpg",
           "assets/images/products/variants/clip/secund-arios-6.jpg",
-          "assets/images/products/variants/clip/secund-arios-7.jpg"
+          "assets/images/products/variants/clip/secund-arios-7.jpg",
+          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-18mm.jpg",
+          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-a.jpg",
+          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-c.jpg",
+          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-cd.jpg",
+          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-v-v.jpg",
+          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg",
+          "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg",
+          "assets/images/products/variants/clip/tabela-nivelador-de-porcelanato.jpg"
         ]
       },
       {
-        "name": "Untitled",
+        "name": "Aplicador",
         "class": "untitled",
         "imgs": [
           "assets/images/products/variants/clip/untitled-1.jpg"
@@ -1457,16 +1406,10 @@ const PRODUCTS = [
       "peso": "4g"
     },
     "img": "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-1.jpg",
-    "colors": [
-      {
-        "name": "Cunha Aplicacao Porcelanato",
-        "class": "cunha-aplicacao-porcelanato",
-        "imgs": [
-          "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-1.jpg",
-          "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-2.jpg",
-          "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-3.jpg"
-        ]
-      }
+    "imgs": [
+      "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-1.jpg",
+      "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-2.jpg",
+      "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-3.jpg"
     ]
   }
 ];
