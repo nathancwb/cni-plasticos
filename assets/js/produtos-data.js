@@ -168,9 +168,8 @@ const PRODUCTS = [
       "dimensao": "24mm",
       "peso": "12g"
     },
-    "img": "assets/images/products/variants/roldana-24/imagem-amazon.jpg",
+    "img": "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-a-copia.jpg",
     "imgs": [
-      "assets/images/products/variants/roldana-24/imagem-amazon.jpg",
       "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-a-copia.jpg",
       "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-a.jpg",
       "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-b-copia.jpg",
