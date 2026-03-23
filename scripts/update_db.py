@@ -173,11 +173,18 @@ def generate_db():
                     "imgs": imgs
                 })
                 
-            if colors:
+            if len(colors) > 1:
                 prod['colors'] = colors
                 prod['img'] = colors[0]['imgs'][0]
+            elif len(colors) == 1:
+                # Merge into simple imgs array
+                if 'colors' in prod: del prod['colors']
+                prod['imgs'] = colors[0]['imgs']
+                prod['img'] = prod['imgs'][0]
             elif non_variant_files:
                 non_variant_files.sort()
+                if 'colors' in prod: del prod['colors']
+                prod['imgs'] = non_variant_files
                 prod['img'] = non_variant_files[0]
                 
     # Write back to file
