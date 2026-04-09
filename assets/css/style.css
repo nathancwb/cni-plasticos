@@ -453,6 +453,57 @@ img {
     letter-spacing: 0.06em;
 }
 
+/* About page cards (white background) override */
+.trust-grid-about .trust-item {
+    border-right: 1px solid var(--border-color);
+    text-align: left;
+}
+.trust-grid-about .trust-item:last-child {
+    border-right: none;
+}
+.trust-grid-about .trust-item strong {
+    color: var(--dark-sea-blue);
+    font-size: 1.1rem;
+}
+.trust-grid-about .trust-item p {
+    color: var(--soft-grey);
+    font-size: 0.95rem;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+/* === WHATSAPP FLOATING BUTTON === */
+.whatsapp-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+    z-index: 9000;
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s;
+    animation: waPulse 2.5s ease-in-out infinite;
+}
+.whatsapp-float:hover {
+    transform: scale(1.1) translateY(-3px);
+    box-shadow: 0 10px 32px rgba(37, 211, 102, 0.55);
+    animation: none;
+}
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
+@keyframes waPulse {
+    0%, 100% { box-shadow: 0 6px 24px rgba(37,211,102,0.45); }
+    50%       { box-shadow: 0 6px 32px rgba(37,211,102,0.75), 0 0 0 8px rgba(37,211,102,0.1); }
+}
+
 /* === SECTIONS === */
 .section {
     padding: 100px 0;
