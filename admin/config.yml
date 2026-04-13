@@ -3,7 +3,7 @@ backend:
   repo: nathancwb/cni-plasticos
   branch: main
   auth_type: pkce
-  app_id: REPLACE_WITH_GITHUB_OAUTH_CLIENT_ID
+  app_id: Ov23lip6sHw9DtXb2fxC
 
 media_folder: assets/images/blog
 public_folder: /assets/images/blog
