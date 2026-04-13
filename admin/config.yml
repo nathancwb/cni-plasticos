@@ -5,75 +5,81 @@ backend:
   base_url: https://cni-plasticos.vercel.app
   auth_endpoint: api/auth
 
-media_folder: assets/images/blog
-public_folder: /assets/images/blog
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
 
 locale: pt
 
 collections:
+
+  # ─── BLOG ───────────────────────────────────────────────────────────────────
   - name: blog
-    label: Blog
+    label: "✍️ Blog"
     label_singular: Post
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    format: json
+    fields:
+      - { name: title, label: "Título do Post", widget: string }
+      - { name: slug, label: "URL (sem acentos, ex: meu-post)", widget: string }
+      - { name: date, label: "Data de publicação", widget: datetime, format: "DD MMM YYYY", date_format: "DD/MM/YYYY", time_format: false }
+      - { name: excerpt, label: "Resumo (aparece no card)", widget: text }
+      - { name: thumbnail, label: "Imagem de capa", widget: image, required: false }
+      - { name: content, label: "Conteúdo completo", widget: markdown }
+
+  # ─── PÁGINAS DO SITE ─────────────────────────────────────────────────────────
+  - name: paginas
+    label: "🖥️ Páginas do Site"
     files:
-      - name: posts
-        label: Publicações do Blog
-        file: content/blog-data.json
+
+      - name: home
+        label: "Página Inicial (Home)"
+        file: content/home.json
         format: json
         fields:
-          - name: posts
-            label: Posts
-            widget: list
-            summary: "{{fields.title}} — {{fields.date}}"
-            fields:
-              - name: title
-                label: Título
-                widget: string
-              - name: slug
-                label: "URL do post (sem espaços, sem acentos, ex: meu-artigo)"
-                widget: string
-                pattern:
-                  - '^[a-z0-9]+(?:-[a-z0-9]+)*$'
-                  - "Apenas letras minúsculas, números e hífens"
-              - name: date
-                label: Data de publicação
-                widget: datetime
-                format: DD MMM YYYY
-                date_format: DD/MM/YYYY
-                time_format: false
-              - name: excerpt
-                label: Resumo (aparece no card do blog)
-                widget: text
-              - name: thumbnail
-                label: Imagem de capa
-                widget: image
-                required: false
-              - name: content
-                label: Conteúdo completo do post
-                widget: markdown
+          - { name: hero_titulo, label: "Título principal (Hero)", widget: string }
+          - { name: hero_subtitulo, label: "Subtítulo (Hero)", widget: text }
+          - { name: hero_cta_texto, label: "Texto do botão principal", widget: string }
+          - { name: sobre_titulo, label: "Título da seção Sobre", widget: string }
+          - { name: sobre_texto, label: "Texto da seção Sobre", widget: text }
+          - name: numeros_anos
+            label: "Anos de experiência (ex: 20+)"
+            widget: string
+          - name: numeros_produtos
+            label: "Número de produtos (ex: 100+)"
+            widget: string
+          - name: numeros_clientes
+            label: "Número de clientes (ex: 500+)"
+            widget: string
+          - name: numeros_estados
+            label: "Estados atendidos (ex: 27)"
+            widget: string
 
+      - name: empresa
+        label: "A Empresa"
+        file: content/empresa.json
+        format: json
+        fields:
+          - { name: missao, label: "Missão", widget: text }
+          - { name: visao, label: "Visão", widget: text }
+          - { name: valores, label: "Valores", widget: text }
+          - { name: historia_titulo, label: "Título da seção história", widget: string }
+          - { name: historia_texto, label: "Texto da história", widget: text }
+          - { name: foto_fabrica, label: "Foto da fábrica", widget: image, required: false }
+
+  # ─── CONFIGURAÇÕES ────────────────────────────────────────────────────────────
   - name: settings
-    label: Configurações do Site
+    label: "⚙️ Configurações do Site"
     files:
       - name: contact
-        label: Informações de Contato
+        label: "Informações de Contato"
         file: content/settings.json
         format: json
         fields:
-          - name: phone
-            label: Telefone / WhatsApp
-            widget: string
-          - name: email_comercial
-            label: E-mail comercial
-            widget: string
-          - name: email_atendimento
-            label: E-mail atendimento
-            widget: string
-          - name: address
-            label: Endereço
-            widget: string
-          - name: instagram
-            label: Link do Instagram
-            widget: string
-          - name: facebook
-            label: Link do Facebook
-            widget: string
+          - { name: phone, label: "Telefone / WhatsApp", widget: string }
+          - { name: email_comercial, label: "E-mail comercial", widget: string }
+          - { name: email_atendimento, label: "E-mail atendimento", widget: string }
+          - { name: address, label: "Endereço completo", widget: string }
+          - { name: instagram, label: "Link do Instagram", widget: string }
+          - { name: facebook, label: "Link do Facebook", widget: string }
