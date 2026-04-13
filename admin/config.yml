@@ -41,20 +41,18 @@ collections:
           - { name: hero_titulo, label: "Título principal (Hero)", widget: string }
           - { name: hero_subtitulo, label: "Subtítulo (Hero)", widget: text }
           - { name: hero_cta_texto, label: "Texto do botão principal", widget: string }
+          - { name: hero_imagem, label: "🖼️ Foto do Hero (imagem principal)", widget: image }
           - { name: sobre_titulo, label: "Título da seção Sobre", widget: string }
           - { name: sobre_texto, label: "Texto da seção Sobre", widget: text }
-          - name: numeros_anos
-            label: "Anos de experiência (ex: 20+)"
-            widget: string
-          - name: numeros_produtos
-            label: "Número de produtos (ex: 100+)"
-            widget: string
-          - name: numeros_clientes
-            label: "Número de clientes (ex: 500+)"
-            widget: string
-          - name: numeros_estados
-            label: "Estados atendidos (ex: 27)"
-            widget: string
+          - { name: sobre_imagem, label: "🖼️ Foto da seção Sobre (fábrica)", widget: image }
+          - { name: numeros_anos, label: "Anos de experiência (ex: 20+)", widget: string }
+          - { name: numeros_produtos, label: "Número de produtos (ex: 100+)", widget: string }
+          - { name: numeros_clientes, label: "Número de clientes (ex: 500+)", widget: string }
+          - { name: numeros_estados, label: "Estados atendidos (ex: 27)", widget: string }
+          - { name: servico1_imagem, label: "🖼️ Foto Card Serviço 1 (Usinagem)", widget: image }
+          - { name: servico2_imagem, label: "🖼️ Foto Card Serviço 2 (Polímeros)", widget: image }
+          - { name: servico3_imagem, label: "🖼️ Foto Card Serviço 3 (Moldes)", widget: image }
+
 
       - name: empresa
         label: "A Empresa"
