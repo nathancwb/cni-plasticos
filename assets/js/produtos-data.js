@@ -2,13 +2,14 @@ const PRODUCTS = [
   {
     "id": "w-tradicional",
     "cat": "Isoladores Tipo W",
-    "name": "Isolador W Tradicional",
-    "desc": "O clássico isolador em formato W para cercas elétricas rurais. Fabricado em polietileno de alta densidade, oferece excelente isolamento elétrico e alta resistência às intempéries. Seu design em W garante encaixe firme no arame, evitando deslocamentos. Ideal para propriedades rurais de todos os portes.",
+    "name": "Isolador Tipo W Tradicional",
+    "desc": "Produzido em polímero plástico isolante. Alta Densidade de alta resistência ao tempo e ao desgaste. Suporta passagem de fio de até 5mm. Distância entre furos: 60mm.",
     "specs": {
       "categoria": "Isolador",
       "material": "Polietileno HD",
-      "dimensao": "45mm",
-      "peso": "14g"
+      "dimensao": "L: 36mm C: 75mm A: 32mm",
+      "peso": "14g",
+      "codigo": "Preto: 520 | Amarelo: 519"
     },
     "img": "assets/images/products/variants/w-tradicional/isolador-w-para-cerca-eletrica-tradicional-amarelo-a.jpg",
     "colors": [
@@ -125,13 +126,14 @@ const PRODUCTS = [
   {
     "id": "roldana-36",
     "cat": "Roldanas Isoladoras",
-    "name": "Roldana Isoladora 36mm",
-    "desc": "Roldana isoladora de 36mm para passagem de fios em cantos e mudanças de direção da cerca elétrica. Seu design reduz o atrito e protege o fio contra desgaste, prolongando a vida útil da instalação. Parafuso incluso.",
+    "name": "Isolador Tipo Roldana 36",
+    "desc": "Produzido em polímero plástico isolante. Pigmentado, alta densidade, alta resistência ao tempo e ao desgaste. Usos comuns: Cercas elétricas rurais, Isolamento elétrico residencial.",
     "specs": {
       "categoria": "Roldana",
       "material": "Polietileno HD",
-      "dimensao": "36mm",
-      "peso": "20g"
+      "dimensao": "L: 36mm C: 36mm A: 55mm",
+      "peso": "20g",
+      "codigo": "Preto: 253 | Amarelo: 124"
     },
     "img": "assets/images/products/variants/roldana-36/isolador-roldana-cerca-eletrica-36-amarelo-0c.jpg",
     "has3d": true,
@@ -160,13 +162,14 @@ const PRODUCTS = [
   {
     "id": "roldana-24",
     "cat": "Roldanas Isoladoras",
-    "name": "Roldana Isoladora 24mm",
-    "desc": "Roldana compacta de 24mm para instalações com espaço reduzido. Perfeita para passagem de fios em mourões e postes menores. Fabricada em polietileno de alta densidade para máxima durabilidade.",
+    "name": "Isolador Tipo Roldana 24",
+    "desc": "Produzido em polímero plástico isolante. Pigmentado, alta densidade, alta resistência ao tempo e ao desgaste. Usos comuns: Cercas elétricas rurais, Isolamento elétrico residencial.",
     "specs": {
       "categoria": "Roldana",
       "material": "Polietileno HD",
-      "dimensao": "24mm",
-      "peso": "12g"
+      "dimensao": "L: 24mm C: 24mm A: 48mm",
+      "peso": "12g",
+      "codigo": "Cód: 62 (Preto)"
     },
     "img": "assets/images/products/variants/roldana-24/isolador-roldana-cerca-eletrica-24-preto-a-copia.jpg",
     "imgs": [
@@ -192,13 +195,14 @@ const PRODUCTS = [
   {
     "id": "roldana-30",
     "cat": "Roldanas Isoladoras",
-    "name": "Roldana Isoladora 30mm",
-    "desc": "Roldana de tamanho intermediário, versátil para a maioria das instalações de cerca elétrica. Excelente relação entre tamanho e capacidade de isolamento. Disponível em múltiplas cores.",
+    "name": "Isolador Tipo Roldana 30",
+    "desc": "Produzido em polímero plástico isolante. Pigmentado, alta densidade, alta resistência ao tempo e ao desgaste. Usos comuns: Cercas elétricas rurais, Isolamento elétrico residencial.",
     "specs": {
       "categoria": "Roldana",
       "material": "Polietileno HD",
-      "dimensao": "30mm",
-      "peso": "16g"
+      "dimensao": "L: 30mm C: 30mm A: 48mm",
+      "peso": "16g",
+      "codigo": "Preto: 247 | Amarelo: 245"
     },
     "img": "assets/images/products/variants/roldana-30/isolador-roldana-cerca-eletrica-30-preto-0c-2.jpg",
     "has3d": true,
@@ -235,39 +239,16 @@ const PRODUCTS = [
     ]
   },
   {
-    "id": "roldana-30-laranja",
-    "cat": "Roldanas Isoladoras",
-    "name": "Roldana 30mm Laranja",
-    "desc": "Versão laranja da roldana de 30mm para maior visibilidade no campo. Facilita a identificação da linha da cerca e inspeções visuais. Mesma qualidade e resistência da versão tradicional.",
-    "specs": {
-      "categoria": "Roldana",
-      "material": "Polietileno HD",
-      "dimensao": "30mm",
-      "peso": "16g"
-    },
-    "img": "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja1.jpg",
-    "imgs": [
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja1.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja2.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja3.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-30-laranja4.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-0c.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-a.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-b.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo-bc.jpg",
-      "assets/images/products/variants/roldana-30-laranja/isolador-roldana-cerca-eletrica-36-amarelo.jpg"
-    ]
-  },
-  {
     "id": "roldana-40-garra",
     "cat": "Roldanas Isoladoras",
-    "name": "Roldana 40mm com Garra",
-    "desc": "Roldana de 40mm com sistema de garra para fixação direta em arames lisos ou farpados. Instalação rápida sem necessidade de ferramentas adicionais. Design robusto para uso intensivo.",
+    "name": "Isolador Tipo Roldana 40 (com garra)",
+    "desc": "Produzido em polímero plástico isolante. Pigmentado, alta densidade, alta resistência ao tempo e ao desgaste. Usos comuns: Cercas elétricas rurais, Isolamento elétrico residencial.",
     "specs": {
       "categoria": "Roldana",
       "material": "Polietileno HD",
-      "dimensao": "40mm",
-      "peso": "22g"
+      "dimensao": "L: 45mm C: 45mm A: 22mm",
+      "peso": "22g",
+      "codigo": "Preto: 298 | Amarelo: 122"
     },
     "img": "assets/images/products/variants/roldana-40-garra/isolador-roldana-40-com-garra-amarelo-a.jpg",
     "imgs": [
@@ -292,13 +273,14 @@ const PRODUCTS = [
   {
     "id": "roldana-48",
     "cat": "Roldanas Isoladoras",
-    "name": "Roldana Isoladora 48mm",
-    "desc": "A maior roldana da linha CNI, ideal para instalações industriais e cercas de grande porte que exigem isolamento reforçado. Suporta maior carga e garante proteção superior.",
+    "name": "Isolador Tipo Roldana 48 (Superforte)",
+    "desc": "Roldana extra-grande sem prego. Produzida em polímero plástico isolante, pigmentado, alta densidade, alta resistência ao tempo e ao desgaste, alta resistência a tração.",
     "specs": {
       "categoria": "Roldana",
       "material": "Polietileno HD",
-      "dimensao": "48mm",
-      "peso": "28g"
+      "dimensao": "L: 48mm C: 43mm A: 48mm",
+      "peso": "28g",
+      "codigo": "Preto: 263 | Amarelo: 259"
     },
     "img": "assets/images/products/variants/roldana-48/roldana-48-amarelo.jpg",
     "imgs": [
@@ -357,8 +339,8 @@ const PRODUCTS = [
   {
     "id": "castanha-catraca",
     "cat": "Castanhas e Catracas",
-    "name": "Castanha para Catraca",
-    "desc": "Castanha quadrada reforçada projetada especificamente para o mecanismo de catraca. Design exclusivo para encaixe perfeito no sistema de tensionamento. Alta resistência mecânica para uso contínuo.",
+    "name": "Castanha Quadrada",
+    "desc": "Castanha quadrada para catraca, resistente para tensionamento e sistema de catraca.",
     "specs": {
       "categoria": "Castanha",
       "material": "Polietileno HD",
@@ -368,176 +350,76 @@ const PRODUCTS = [
     "img": "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-1.jpg",
     "has3d": true,
     "model": "assets/models/03.glb",
-    "colors": [
-      {
-        "name": "Alta Resoluc Ao",
-        "class": "alta-resoluc-ao",
-        "imgs": [
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-1.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-10.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-2.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-3.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-4.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-5.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-6.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-7.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-8.jpg",
-          "assets/images/products/variants/castanha-catraca/alta-resoluc-ao-9.jpg"
-        ]
-      },
-      {
-        "name": "Castanha Quadrada Reforcada Amarela",
-        "class": "castanha-quadrada-reforcada-amarela",
-        "imgs": [
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-1.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-10.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-2.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-3.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-4.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-5.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-6.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-7.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-8.jpg",
-          "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-9.jpg"
-        ]
-      }
+    "imgs": [
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-1.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-10.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-2.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-3.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-4.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-5.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-6.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-7.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-8.jpg",
+      "assets/images/products/variants/castanha-catraca/castanha-quadrada-reforcada-amarela-9.jpg"
     ]
   },
   {
     "id": "catraca-isolada",
     "cat": "Castanhas e Catracas",
-    "name": "Catraca Isolada",
-    "desc": "Catraca com isolamento integrado para tensionamento de cerca elétrica. Permite ajustar a tensão do fio sem perder o isolamento, aumentando a segurança na instalação e manutenção da cerca.",
+    "name": "Catraca Isolada Reforçada até 100 KGF",
+    "desc": "Produzido em aço carbono galvanizado. Castanha produzida em plástico de alta densidade. Maior durabilidade contra ação do tempo. Resistência de tração é de 100KGF.",
     "specs": {
       "categoria": "Catraca",
       "material": "Aço + Polietileno",
-      "dimensao": "120mm",
-      "peso": "85g"
+      "dimensao": "L: 32mm C: 102mm A: 52mm",
+      "peso": "85g",
+      "codigo": "Amarelo: 86"
     },
     "img": "assets/images/products/variants/catraca-isolada/antigas-1.jpg",
-    "colors": [
-      {
-        "name": "Antigas",
-        "class": "antigas",
-        "imgs": [
-          "assets/images/products/variants/catraca-isolada/antigas-1.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-2.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-3.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-4.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-5.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-6.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-7.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-8.jpg",
-          "assets/images/products/variants/catraca-isolada/antigas-9.jpg"
-        ]
-      },
-      {
-        "name": "Catraca Nova Menor",
-        "class": "catraca-nova-menor",
-        "imgs": [
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-1.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-2.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-3.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-4.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-5.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-6.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-7.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-8.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-nova-menor-9.jpg"
-        ]
-      },
-      {
-        "name": "Catraca Isolada Cerca Eletrica Rural",
-        "class": "catraca-isolada-cerca-eletrica-rural",
-        "imgs": [
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-1.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-2.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-3.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-4.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-5.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-6.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-7.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-8.jpg",
-          "assets/images/products/variants/catraca-isolada/10-catraca-isolada-cerca-eletrica-rural.jpg",
-          "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural.jpg"
-        ]
-      }
+    "imgs": [
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-1.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-2.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-3.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-4.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-5.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-6.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-7.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-8.jpg",
+      "assets/images/products/variants/catraca-isolada/10-catraca-isolada-cerca-eletrica-rural.jpg",
+      "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural.jpg"
     ]
   },
   {
     "id": "catraca-lisa",
     "cat": "Castanhas e Catracas",
-    "name": "Catraca Esticadora Lisa",
-    "desc": "Catraca esticadora reforçada para tensionamento de arames e fios de cerca. Construção robusta em aço galvanizado com acabamento liso para maior durabilidade e resistência à corrosão.",
+    "name": "Catraca Extra Forte Esticadora",
+    "desc": "Produzida em aço carbono galvanizado. Catraca grande - SUPER REFORÇADA. Maior durabilidade contra ação do tempo. Em terrenos planos estica o arame até 1200m. Resistência de tração é de 1000 KG/peso.",
     "specs": {
       "categoria": "Catraca",
       "material": "Aço Galvanizado",
-      "dimensao": "130mm",
-      "peso": "95g"
+      "dimensao": "L: 61mm C: 75mm A: 42mm",
+      "peso": "95g",
+      "codigo": "Metálico: 498"
     },
-    "img": "assets/images/products/variants/catraca-lisa/jpg-1.jpg",
-    "colors": [
-      {
-        "name": "Jpg",
-        "class": "jpg",
-        "imgs": [
-          "assets/images/products/variants/catraca-lisa/jpg-1.jpg",
-          "assets/images/products/variants/catraca-lisa/jpg-2.jpg",
-          "assets/images/products/variants/catraca-lisa/jpg-3.jpg",
-          "assets/images/products/variants/catraca-lisa/jpg-4.jpg",
-          "assets/images/products/variants/catraca-lisa/jpg-5.jpg",
-          "assets/images/products/variants/catraca-lisa/jpg-6.jpg",
-          "assets/images/products/variants/catraca-lisa/jpg-7.jpg",
-          "assets/images/products/variants/catraca-lisa/jpg-8.jpg"
-        ]
-      },
-      {
-        "name": "365 Menos",
-        "class": "365-menos",
-        "imgs": [
-          "assets/images/products/variants/catraca-lisa/365-menos-1.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-10.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-2.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-3.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-4.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-5.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-6.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-7.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-8.jpg",
-          "assets/images/products/variants/catraca-lisa/365-menos-9.jpg"
-        ]
-      },
-      {
-        "name": "Catraca Esticadora Reforcada",
-        "class": "catraca-esticadora-reforcada",
-        "imgs": [
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-1.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-2.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-3.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-4.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-5.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-6.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-7.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-8.jpg",
-          "assets/images/products/variants/catraca-lisa/12-catraca-esticadora-reforcada.jpg",
-          "assets/images/products/variants/catraca-lisa/5-catraca-esticadora-reforcada.jpg",
-          "assets/images/products/variants/catraca-lisa/9-catraca-esticadora-reforcada.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-png.jpg",
-          "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-png-copia.jpg"
-        ]
-      }
+    "img": "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-1.jpg",
+    "imgs": [
+      "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-1.jpg",
+      "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-2.jpg",
+      "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-3.jpg",
+      "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-4.jpg"
     ]
   },
   {
     "id": "gancho-7cm",
     "cat": "Ganchos Isoladores",
-    "name": "Gancho Isolador 7cm",
-    "desc": "Gancho isolador curto de 7cm com anel. Ideal para fixação em mourões de madeira com pouco espaçamento. Modelo compacto e resistente, perfeito para cercas com múltiplos fios próximos.",
+    "name": "Isolador Gancho Anel Tradicional - Curto 07 CM",
+    "desc": "Possui medidas menores que o padrão de mercado. Comprimento do parafuso aparente: 32mm. Parafuso produzido em aço zincado 3/16\". Necessário pré-furo de 3mm ou bucha 6. Alta resistência ao tempo e ao desgaste.",
     "specs": {
       "categoria": "Gancho",
       "material": "Aço + Polietileno",
-      "dimensao": "7cm",
-      "peso": "18g"
+      "dimensao": "L: 27mm C: 71mm A: 20mm",
+      "peso": "18g",
+      "codigo": "Preto: 876 | Amarelo: 875"
     },
     "img": "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg",
     "imgs": [
@@ -545,50 +427,7 @@ const PRODUCTS = [
       "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-10.jpg",
       "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-11.jpg",
       "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-12.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-13.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-14.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-15.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-16.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-17.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-18.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-19.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-2.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-20.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-21.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-22.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-23.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-24.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-25.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-26.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-27.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-28.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-29.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-3.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-30.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-31.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-32.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-33.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-34.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-35.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-36.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-37.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-38.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-39.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-4.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-40.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-41.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-42.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-43.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-44.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-45.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-46.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-47.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-48.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-5.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-6.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-7.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-8.jpg",
-      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-9.jpg"
+      "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-13.jpg"
     ],
     "has3d": true,
     "model": "assets/models/07.glb"
@@ -596,13 +435,14 @@ const PRODUCTS = [
   {
     "id": "gancho-9cm",
     "cat": "Ganchos Isoladores",
-    "name": "Gancho Afastador 9cm",
-    "desc": "Gancho afastador de 9cm que mantém o fio a uma distância segura do mourão. Evita fugas de corrente por contato com a madeira, aumentando a eficiência da cerca elétrica.",
+    "name": "Isolador Gancho Anel Tradicional - Curto 09 CM",
+    "desc": "Produzido em polímero plástico isolante. Parafuso produzido em aço zincado 1/4\". Necessário pré-furo de 4mm ou bucha 8. Comprimento do parafuso aparente: 41mm. Alta resistência ao tempo e ao desgaste.",
     "specs": {
       "categoria": "Gancho",
       "material": "Aço + Polietileno",
-      "dimensao": "9cm",
-      "peso": "22g"
+      "dimensao": "L: 36mm C: 93mm A: 29mm",
+      "peso": "22g",
+      "codigo": "Preto: 67 | Amarelo: 03"
     },
     "img": "assets/images/products/variants/gancho-9-cm/isolador-gancho-afastador-9cm-amarelo-0c.jpg",
     "imgs": [
@@ -627,36 +467,49 @@ const PRODUCTS = [
   {
     "id": "gancho-19cm",
     "cat": "Ganchos Isoladores",
-    "name": "Gancho Longo 19cm",
-    "desc": "Gancho isolador longo de 19cm para máximo afastamento do fio em relação ao mourão. Indicado para áreas com vegetação densa ou animais de grande porte que exigem maior distância de segurança.",
+    "name": "Isolador Gancho Anel Tradicional - Longo 19 CM",
+    "desc": "Produzido em polímero plástico isolante. Parafuso de aço carbono em todo o interior. Necessário pré-furo de 4mm ou bucha 8. Alta densidade e alta resistência ao tempo e ao desgaste.",
     "specs": {
       "categoria": "Gancho",
       "material": "Aço + Polietileno",
-      "dimensao": "19cm",
-      "peso": "32g"
+      "dimensao": "L: 36mm C: 190mm A: 29mm",
+      "peso": "32g",
+      "codigo": "Preto: 270 | Amarelo: 274"
     },
     "img": "assets/images/products/variants/gancho-19-cm/isolador-gancho-afastador-9cm-preto-d.jpg",
-    "imgs": [
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-afastador-9cm-preto-d.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-a.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-a-copia.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-a.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-u.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-b.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-c.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-copia.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a-copia.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a-u.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-ac.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-b.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-bc.jpg",
-      "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-c.jpg"
-    ],
     "has3d": true,
-    "model": "assets/models/06.glb"
+    "model": "assets/models/06.glb",
+    "colors": [
+      {
+        "name": "Preto",
+        "class": "preto",
+        "imgs": [
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-afastador-9cm-preto-d.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a-copia.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a-u.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a-a.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-a.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-ac.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-b.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-bc.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-preto-c.jpg"
+        ]
+      },
+      {
+        "name": "Amarelo",
+        "class": "amarelo",
+        "imgs": [
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-a.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-a-copia.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-a.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac-u.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-ac.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-b.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-c.jpg",
+          "assets/images/products/variants/gancho-19-cm/isolador-gancho-longo-18cm-amarelo-copia.jpg"
+        ]
+      }
+    ]
   },
   {
     "id": "gancho-cni",
@@ -712,7 +565,7 @@ const PRODUCTS = [
       "dimensao": "80mm",
       "peso": "25g"
     },
-    "img": "assets/images/products/variants/chave-interruptora/amarela-1.jpg",
+    "img": "assets/images/products/variants/chave-interruptora/vermelha-1.jpg",
     "has3d": true,
     "model": "assets/models/Peça_com cor.glb",
     "colors": [
@@ -1287,67 +1140,18 @@ const PRODUCTS = [
   {
     "id": "fio-eletroplastico",
     "cat": "Acessórios para Cerca Elétrica",
-    "name": "Fio Eletroplástico",
-    "desc": "Fio eletroplástico condutor para cerca elétrica. Combina resistência mecânica com boa condutividade elétrica. Visível e durável, ideal para cercas de contenção animal em propriedades rurais.",
+    "name": "Fio Eletroplástico Inox Tradicional",
+    "desc": "Fabricado com fios plásticos em PEAD nobre, com proteção ANTI-UV, garantindo maior durabilidade ao tempo. Composto por 15 fios plásticos e 6 fios inox, totalizando 21 fios enrolados. Não enferruja, não quebra.",
     "specs": {
       "categoria": "Fio",
       "material": "Aço + Polietileno",
-      "dimensao": "--",
+      "dimensao": "Extensão: 50m / 500m | Espessura: 7.5mm",
       "peso": "Variável"
     },
-    "img": "assets/images/products/variants/fio-eletropl-astico/d-nq-np-2x-710111-mlb31129242206-062019-f.jpg",
+    "img": "assets/images/products/variants/cabo-subterr-aneo/azul-1.jpg",
     "imgs": [
-      "assets/images/products/variants/fio-eletropl-astico/d-nq-np-2x-710111-mlb31129242206-062019-f.jpg"
-    ]
-  },
-  {
-    "id": "batoque",
-    "cat": "Acessórios para Cerca Elétrica",
-    "name": "Batoque Isolador",
-    "desc": "Batoque isolador para vedação e isolamento de pontos de conexão da cerca elétrica. Protege contra umidade e contato acidental, garantindo a integridade do sistema elétrico.",
-    "specs": {
-      "categoria": "Batoque",
-      "material": "Polietileno",
-      "dimensao": "Variável",
-      "peso": "5g"
-    },
-    "img": "assets/images/products/variants/batoque/20240523-141244.jpg",
-    "colors": [
-      {
-        "name": "20240523",
-        "class": "20240523",
-        "imgs": [
-          "assets/images/products/variants/batoque/20240523-141244.jpg",
-          "assets/images/products/variants/batoque/20240523-141329.jpg",
-          "assets/images/products/variants/batoque/20240523-141333.jpg",
-          "assets/images/products/variants/batoque/20240523-141454.jpg",
-          "assets/images/products/variants/batoque/capa-batoque-branco.jpg",
-          "assets/images/products/variants/batoque/capa-batque-amarelo.jpg",
-          "assets/images/products/variants/batoque/segunda-foto-para-batoque.jpg"
-        ]
-      },
-      {
-        "name": "Vermelho",
-        "class": "vermelho",
-        "imgs": [
-          "assets/images/products/variants/batoque/vermelho-1.jpg",
-          "assets/images/products/variants/batoque/vermelho-2.jpg",
-          "assets/images/products/variants/batoque/vermelho-3.jpg",
-          "assets/images/products/variants/batoque/vermelho-4.jpg",
-          "assets/images/products/variants/batoque/vermelho-5.jpg"
-        ]
-      },
-      {
-        "name": "Branco",
-        "class": "branco",
-        "imgs": [
-          "assets/images/products/variants/batoque/branco-1.jpg",
-          "assets/images/products/variants/batoque/branco-2.jpg",
-          "assets/images/products/variants/batoque/branco-3.jpg",
-          "assets/images/products/variants/batoque/branco-4.jpg",
-          "assets/images/products/variants/batoque/branco-5.jpg"
-        ]
-      }
+      "assets/images/products/variants/cabo-subterr-aneo/azul-1.jpg",
+      "assets/images/products/variants/cabo-subterr-aneo/azul-2.jpg"
     ]
   },
   {
@@ -1362,35 +1166,11 @@ const PRODUCTS = [
       "peso": "3g"
     },
     "img": "assets/images/products/variants/clip/secund-arios-1.jpg",
-    "colors": [
-      {
-        "name": "Nivelador Clip",
-        "class": "secund-arios",
-        "imgs": [
-          "assets/images/products/variants/clip/secund-arios-1.jpg",
-          "assets/images/products/variants/clip/secund-arios-2.jpg",
-          "assets/images/products/variants/clip/secund-arios-3.jpg",
-          "assets/images/products/variants/clip/secund-arios-4.jpg",
-          "assets/images/products/variants/clip/secund-arios-5.jpg",
-          "assets/images/products/variants/clip/secund-arios-6.jpg",
-          "assets/images/products/variants/clip/secund-arios-7.jpg",
-          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-18mm.jpg",
-          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-a.jpg",
-          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-c.jpg",
-          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-cd.jpg",
-          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-v-v.jpg",
-          "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg",
-          "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg",
-          "assets/images/products/variants/clip/tabela-nivelador-de-porcelanato.jpg"
-        ]
-      },
-      {
-        "name": "Aplicador",
-        "class": "untitled",
-        "imgs": [
-          "assets/images/products/variants/clip/untitled-1.jpg"
-        ]
-      }
+    "imgs": [
+      "assets/images/products/variants/clip/secund-arios-1.jpg",
+      "assets/images/products/variants/clip/secund-arios-2.jpg",
+      "assets/images/products/variants/clip/secund-arios-3.jpg",
+      "assets/images/products/variants/clip/secund-arios-4.jpg"
     ]
   },
   {
