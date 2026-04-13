@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Artigo do blog CNI Plásticos.">
-    <title>Artigo | CNI Plásticos</title>
+    <title id="page-title">Artigo | CNI Plásticos</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +14,102 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <style>
+        .post-hero {
+            background: var(--dark-sea-blue);
+            padding: 100px 0 50px;
+            text-align: center;
+        }
+        .post-hero .post-date {
+            color: var(--sea-blue);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+            display: inline-block;
+        }
+        .post-hero h1 {
+            color: #fff;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.25;
+        }
+        .post-body {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.85;
+            color: #374151;
+        }
+        .post-body img.cover {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 44px;
+            box-shadow: 0 10px 40px rgba(0,0,0,.1);
+        }
+        .post-body h2, .post-body h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-sea-blue);
+            margin: 40px 0 16px;
+        }
+        .post-body h2 { font-size: 1.6rem; }
+        .post-body h3 { font-size: 1.3rem; }
+        .post-body p { margin-bottom: 20px; }
+        .post-body blockquote {
+            background: rgba(0,108,188,.06);
+            border-left: 4px solid var(--sea-blue);
+            padding: 20px 24px;
+            margin: 36px 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--dark-sea-blue);
+        }
+        .post-body ul, .post-body ol {
+            padding-left: 24px;
+            margin-bottom: 20px;
+        }
+        .post-body li { margin-bottom: 8px; }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--sea-blue);
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-size: .85rem;
+            font-weight: 600;
+            margin-bottom: 32px;
+        }
+        .back-link:hover { text-decoration: underline; }
+        .post-cta-bar {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        #post-loading {
+            text-align: center;
+            padding: 100px 20px;
+            color: var(--soft-grey);
+        }
+    </style>
 </head>
 
 <body>
@@ -42,39 +135,40 @@
         </div>
     </header>
 
-    <!-- Page Hero (Article Title) -->
-    <section class="page-hero" style="padding-bottom: 60px;">
+    <!-- Post Hero (preenchido via JS) -->
+    <section class="post-hero" id="post-hero" style="display:none;">
         <div class="container">
-            <span style="color: var(--sea-blue); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem; margin-bottom: 16px; display: inline-block;">10 Jan 2025</span>
-            <h1 style="max-width: 900px; margin: 0 auto; line-height: 1.2; font-size: 2.8rem;">Isoladores: Rural vs Industrial</h1>
+            <span class="post-date" id="post-date"></span>
+            <h1 id="post-title-hero"></h1>
         </div>
     </section>
 
-    <!-- Article Content -->
-    <section class="section" style="padding-top: 60px;">
-        <div class="container" style="max-width: 800px; margin: 0 auto;">
-            <!-- Article Image -->
-            <img src="assets/images/blog/isolators-rural.png" alt="Isoladores Rurais e Industriais" style="width: 100%; height: 400px; object-fit: cover; border-radius: 12px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-            
-            <div style="font-family: 'Inter', sans-serif; font-size: 1.1rem; line-height: 1.8; color: var(--soft-grey);">
-                <p style="margin-bottom: 24px;">Entender as diferenças técnicas entre isoladores de uso rural e industrial é essencial para garantir o sucesso e a durabilidade do seu projeto de cercamento ou isolamento elétrico.</p>
-                
-                <h3 style="color: var(--dark-sea-blue); font-size: 1.6rem; margin: 40px 0 20px;">1. Isoladores Rurais (Agronegócio)</h3>
-                <p style="margin-bottom: 24px;">Os isoladores voltados para o campo, como os famosos isoladores tipo "W", Castanha ou Roldana, são projetados para suportar intempéries extremas. Eles possuem aditivos anti-UV que impedem o ressecamento rápido sob o sol forte. Além disso, o design focada em cercas elétricas para gado prioriza a resistência à tração e o rápido escoamento da água da chuva.</p>
-                
-                <h3 style="color: var(--dark-sea-blue); font-size: 1.6rem; margin: 40px 0 20px;">2. Isoladores Industriais</h3>
-                <p style="margin-bottom: 24px;">No ambiente fabril, os isoladores muitas vezes operam em ambientes controlados, porém submetidos a altíssimas tensões ou proximidade com produtos químicos e vapores corrosivos. O material utilizado frequentemente é diferente, buscando estabilidade dimensional e resistência térmica (como o PEEK pu UHMW ou poliamidas especiais com fibra de vidro).</p>
-                
-                <div style="background: rgba(0, 108, 188, 0.05); border-left: 4px solid var(--sea-blue); padding: 24px; margin: 40px 0; border-radius: 0 8px 8px 0;">
-                    <p style="margin: 0; font-style: italic; color: var(--dark-sea-blue); font-weight: 500;">Dica CNI: Para o produtor rural, invista sempre em isoladores com proteção UV verificada. A economia inicial em plásticos de baixa qualidade resulta na necessidade de repor cercas em poucos meses.</p>
-                </div>
-                
-                <p style="margin-bottom: 24px;">Na CNI Plásticos, atendemos as duas pontas da cadeia com processos de injeção plástica extremamente controlados. <strong>A precisão assegura que não ocorra perda de choque ou fugas de corrente, essencial para o manejo do seu gado ou a segurança da sua fábrica.</strong></p>
-                
-                <a href="servicos.html" class="btn-primary" style="margin-top: 30px;">Fazer Cotação de Isoladores</a>
+    <!-- Loading State -->
+    <div id="post-loading">
+        <p>Carregando artigo...</p>
+    </div>
+
+    <!-- Post Content (preenchido via JS) -->
+    <div id="post-content" style="display:none;">
+        <div class="post-body">
+            <a href="blog.html" class="back-link">← Voltar ao Blog</a>
+            <img id="post-cover" class="cover" src="" alt="" style="display:none;">
+            <div id="post-body-content"></div>
+            <div class="post-cta-bar">
+                <span style="font-family:'Poppins',sans-serif;font-size:.9rem;color:var(--soft-grey);">Gostou do conteúdo? Entre em contato!</span>
+                <a href="https://wa.me/554933291661" target="_blank" class="btn-primary" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;border-color:#25D366;">
+                    Falar no WhatsApp
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!-- 404 State -->
+    <div id="post-notfound" style="display:none;text-align:center;padding:100px 20px;">
+        <h2 style="color:var(--dark-sea-blue);font-family:'Poppins',sans-serif;">Post não encontrado</h2>
+        <p style="color:var(--soft-grey);margin-bottom:32px;">O artigo que você está procurando não existe ou foi removido.</p>
+        <a href="blog.html" class="btn-primary">Ver todos os posts</a>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -107,6 +201,67 @@
 
     <script src="assets/js/main.js"></script>
 
+    <script>
+        (async function () {
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug');
+
+            const loading = document.getElementById('post-loading');
+            const hero = document.getElementById('post-hero');
+            const content = document.getElementById('post-content');
+            const notfound = document.getElementById('post-notfound');
+
+            if (!slug) {
+                loading.style.display = 'none';
+                notfound.style.display = 'block';
+                return;
+            }
+
+            try {
+                const res = await fetch('/content/blog-data.json?v=' + Date.now());
+                if (!res.ok) throw new Error('Erro ao carregar dados');
+                const data = await res.json();
+                const posts = data.posts || [];
+                const post = posts.find(p => p.slug === slug);
+
+                loading.style.display = 'none';
+
+                if (!post) {
+                    notfound.style.display = 'block';
+                    return;
+                }
+
+                // Update meta
+                document.getElementById('page-title').textContent = post.title + ' | CNI Plásticos';
+
+                // Hero
+                document.getElementById('post-date').textContent = post.date || '';
+                document.getElementById('post-title-hero').textContent = post.title;
+                hero.style.display = 'block';
+
+                // Cover image
+                if (post.thumbnail) {
+                    const cover = document.getElementById('post-cover');
+                    cover.src = post.thumbnail;
+                    cover.alt = post.title;
+                    cover.style.display = 'block';
+                }
+
+                // Content (Markdown → HTML)
+                const bodyEl = document.getElementById('post-body-content');
+                if (post.content) {
+                    bodyEl.innerHTML = marked.parse(post.content);
+                }
+
+                content.style.display = 'block';
+            } catch (e) {
+                console.error(e);
+                loading.style.display = 'none';
+                notfound.style.display = 'block';
+            }
+        })();
+    </script>
+
     <!-- WhatsApp Float -->
     <a href="https://wa.me/554933291661" target="_blank" class="whatsapp-float" aria-label="Falar no WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -115,4 +270,5 @@
         </svg>
     </a>
 </body>
+
 </html>
