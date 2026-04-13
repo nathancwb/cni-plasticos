@@ -218,28 +218,17 @@
             }
 
             try {
-                const res = await fetch('/content/blog-data.json?v=' + Date.now());
-                if (!res.ok) throw new Error('Erro ao carregar dados');
-                const data = await res.json();
-                const posts = data.posts || [];
-                const post = posts.find(p => p.slug === slug);
+                const res = await fetch(`/content/blog/${slug}.json`);
+                if (!res.ok) throw new Error('Post não encontrado');
+                const post = await res.json();
 
                 loading.style.display = 'none';
 
-                if (!post) {
-                    notfound.style.display = 'block';
-                    return;
-                }
-
-                // Update meta
                 document.getElementById('page-title').textContent = post.title + ' | CNI Plásticos';
-
-                // Hero
                 document.getElementById('post-date').textContent = post.date || '';
                 document.getElementById('post-title-hero').textContent = post.title;
                 hero.style.display = 'block';
 
-                // Cover image
                 if (post.thumbnail) {
                     const cover = document.getElementById('post-cover');
                     cover.src = post.thumbnail;
@@ -247,7 +236,6 @@
                     cover.style.display = 'block';
                 }
 
-                // Content (Markdown → HTML)
                 const bodyEl = document.getElementById('post-body-content');
                 if (post.content) {
                     bodyEl.innerHTML = marked.parse(post.content);
