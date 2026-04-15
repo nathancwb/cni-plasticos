@@ -402,6 +402,38 @@
             transform: scale(1.05);
         }
 
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            background: white;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            line-height: 1;
+            color: var(--dark-sea-blue);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            z-index: 50;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+        }
+        .modal-nav:hover {
+            background: var(--dark-sea-blue);
+            color: white;
+            border-color: var(--dark-sea-blue);
+        }
+        .modal-prev { left: 16px; }
+        .modal-next { right: 60px; }
+        @media (max-width: 768px) {
+            .modal-prev { left: 8px; }
+            .modal-next { right: 52px; }
+        }
+
         .detail-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -958,6 +990,10 @@
     <div class="modal-overlay" id="modal-overlay"></div>
     <section class="product-detail" id="product-detail">
         <button class="modal-close" id="modal-close" aria-label="Fechar detalhes">&times;</button>
+
+        <!-- Navegação Prev / Next -->
+        <button class="modal-nav modal-prev" id="modal-prev" aria-label="Produto anterior">&#8249;</button>
+        <button class="modal-nav modal-next" id="modal-next" aria-label="Próximo produto">&#8250;</button>
         <div class="container" style="padding:0; max-width:100%;">
             <div class="detail-layout">
                 <!-- Gallery Left -->
@@ -1007,9 +1043,9 @@
                             <td>Dimensão</td>
                             <td id="s-dim"></td>
                         </tr>
-                        <tr>
-                            <td>Peso</td>
-                            <td id="s-peso"></td>
+                        <tr id="row-pedido">
+                            <td><strong>Pedido mínimo</strong></td>
+                            <td id="s-pedido" style="font-weight:600;color:var(--dark-sea-blue);"></td>
                         </tr>
                     </table>
 

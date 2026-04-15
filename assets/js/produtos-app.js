@@ -4,6 +4,8 @@
     const detailSection = document.getElementById('product-detail');
     const modalOverlay = document.getElementById('modal-overlay');
     const modalClose = document.getElementById('modal-close');
+    const modalPrev = document.getElementById('modal-prev');
+    const modalNext = document.getElementById('modal-next');
     const galleryImg = document.getElementById('gallery-img');
     const gallery3d = document.getElementById('gallery-3d');
     const galleryBadge = document.getElementById('gallery-badge');
@@ -20,22 +22,23 @@
     const sCat = document.getElementById('s-cat');
     const sMat = document.getElementById('s-mat');
     const sDim = document.getElementById('s-dim');
-    const sPeso = document.getElementById('s-peso');
+    const sPedido = document.getElementById('s-pedido');
 
+    let currentIdx = -1;
     let currentProduct = null;
 
+    // Índice de produtos por categoria (para prev/next dentro da lista filtrada)
+    let filteredIndexes = [];
+
     const categoryIcons = {
-        'Isoladores Tipo W': '⚡',
-        'Roldanas Isoladoras': '⭕',
-        'Castanhas e Catracas': '⚙️',
-        'Ganchos Isoladores': '🪝',
-        'Acessórios para Cerca Elétrica': '🔌',
-        'Niveladores para Pisos': '📏'
+        'Isoladores': '⚡',
+        'Porteiras e Catracas': '🚪',
+        'Fios, Cabos, Tubos e Chaves': '🔌',
+        'Produtos Gerais': '📦'
     };
 
-    // ─── Build full catalog: all categories + products on one page ───
+    // ─── Build full catalog ───────────────────────────────────────────
     function buildFullCatalog() {
-        // Group products by category preserving order
         const categoryMap = {};
         const categoryOrder = [];
         PRODUCTS.forEach((p, i) => {
@@ -46,7 +49,8 @@
             categoryMap[p.cat].push({ product: p, idx: i });
         });
 
-        // Build sticky category nav
+        filteredIndexes = PRODUCTS.map((_, i) => i);
+
         let navHTML = '<div class="cat-nav" id="cat-nav">';
         categoryOrder.forEach(cat => {
             const slug = cat.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -55,7 +59,6 @@
         });
         navHTML += '</div>';
 
-        // Build each category section
         let sectionsHTML = '';
         categoryOrder.forEach(cat => {
             const slug = cat.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
@@ -72,10 +75,21 @@
                 <div class="products-grid">`;
 
             items.forEach(({ product: p, idx }) => {
+                // Thumb: use first color's first IMG if colors defined, else p.img
+                const thumb = p.colors && p.colors[0] && p.colors[0].imgs && p.colors[0].imgs[0]
+                    ? p.colors[0].imgs[0]
+                    : (p.img || '');
+
+                const imgHtml = thumb
+                    ? `<img class="grid-card-img" src="${thumb}" alt="${p.name}" loading="lazy">`
+                    : `<div class="grid-card-img grid-card-no-img"><span>📷</span></div>`;
+
+                const badgeHtml = p.has3d ? '<span class="badge-3d">3D</span>' : '';
+
                 sectionsHTML += `
                     <div class="grid-card" data-idx="${idx}" id="card-${p.id}">
-                        ${p.has3d ? '<span class="badge-3d">3D</span>' : ''}
-                        <img class="grid-card-img" src="${p.img}" alt="${p.name}" loading="lazy">
+                        ${badgeHtml}
+                        ${imgHtml}
                         <h3>${p.name}</h3>
                         <p>${p.specs.categoria}</p>
                     </div>`;
@@ -86,16 +100,13 @@
 
         viewArea.innerHTML = navHTML + sectionsHTML;
 
-        // Attach card click handlers
         viewArea.querySelectorAll('.grid-card').forEach(card => {
             card.addEventListener('click', () => openProduct(parseInt(card.dataset.idx)));
         });
 
-        // Sticky nav highlight on scroll
         initNavHighlight();
     }
 
-    // Highlight active category in nav on scroll
     function initNavHighlight() {
         const sections = viewArea.querySelectorAll('.cat-section');
         const navLinks = viewArea.querySelectorAll('.cat-nav-link');
@@ -115,13 +126,20 @@
         sections.forEach(s => observer.observe(s));
     }
 
+    // ─── Open Product Modal ────────────────────────────────────────────
     function openProduct(idx) {
         const p = PRODUCTS[idx];
+        currentIdx = idx;
         currentProduct = p;
 
         viewArea.querySelectorAll('.grid-card').forEach(c => c.classList.remove('active'));
         const activeCard = document.getElementById('card-' + p.id);
         if (activeCard) activeCard.classList.add('active');
+
+        // Update prev/next visibility
+        const pos = filteredIndexes.indexOf(idx);
+        modalPrev.style.visibility = pos > 0 ? 'visible' : 'hidden';
+        modalNext.style.visibility = pos < filteredIndexes.length - 1 ? 'visible' : 'hidden';
 
         pCategory.textContent = p.specs.categoria;
         pName.textContent = p.name;
@@ -129,14 +147,31 @@
         sCat.textContent = p.specs.categoria;
         sMat.textContent = p.specs.material;
         sDim.textContent = p.specs.dimensao;
-        sPeso.textContent = p.specs.peso;
+        sPedido.textContent = p.specs.pedido_minimo || '';
 
+        // Badge "Disponível versão com pregos"
+        let badgeEl = document.getElementById('product-badge');
+        if (badgeEl) badgeEl.remove();
+        if (p.badge) {
+            badgeEl = document.createElement('div');
+            badgeEl.id = 'product-badge';
+            badgeEl.style.cssText = 'display:inline-flex;align-items:center;gap:6px;background:#f0f9ff;border:1px solid #bae6fd;color:#0369a1;font-size:.78rem;font-weight:600;padding:6px 12px;border-radius:6px;margin-bottom:12px;';
+            badgeEl.innerHTML = `<svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> ${p.badge}`;
+            pName.insertAdjacentElement('afterend', badgeEl);
+        }
+
+        // Color swatches — sempre começa no índice 0 (Preto geralmente)
         if (p.colors && p.colors.length > 0) {
             variantsSection.style.display = 'block';
             let swatchHTML = '';
             p.colors.forEach((c, ci) => {
+                const codLabel = c.cod ? `<small style="color:#6b7280;font-size:.7rem;">Cód: ${c.cod}</small>` : '';
                 swatchHTML += `<button class="color-swatch${ci === 0 ? ' active' : ''}" data-color="${ci}">
-                    <span class="color-dot ${c.class}"></span>${c.name}
+                    <span class="color-dot ${c.class}"></span>
+                    <span style="display:flex;flex-direction:column;align-items:flex-start;gap:1px">
+                        ${c.name}
+                        ${codLabel}
+                    </span>
                 </button>`;
             });
             colorSwatches.innerHTML = swatchHTML;
@@ -147,18 +182,58 @@
                     showColorVariant(parseInt(btn.dataset.color));
                 });
             });
+            // Show first color (index 0) — always Preto first
+            showColorVariant(0);
         } else {
             variantsSection.style.display = 'none';
+            buildThumbs();
+            // Only show main image if there is one
+            if (p.img) {
+                showMainImage(p.img);
+            } else if (p.has3d) {
+                buildThumbs();
+                show3D();
+            } else {
+                showNoImage();
+            }
         }
 
-        buildThumbs();
-        showMainImage(p.img);
-
-        modalOverlay.classList.add('active');
-        detailSection.classList.add('visible');
-        document.body.style.overflow = 'hidden';
+        if (!detailSection.classList.contains('visible')) {
+            modalOverlay.classList.add('active');
+            detailSection.classList.add('visible');
+            document.body.style.overflow = 'hidden';
+        }
     }
 
+    function showNoImage() {
+        galleryImg.style.display = 'none';
+        gallery3d.style.display = 'none';
+        galleryBadge.textContent = 'Foto em breve';
+        galleryBadge.className = 'gallery-badge';
+        galleryHint.style.display = 'none';
+        viewerControls.style.display = 'none';
+    }
+
+    // ─── Prev / Next navigation ────────────────────────────────────────
+    modalPrev.addEventListener('click', () => {
+        const pos = filteredIndexes.indexOf(currentIdx);
+        if (pos > 0) openProduct(filteredIndexes[pos - 1]);
+    });
+
+    modalNext.addEventListener('click', () => {
+        const pos = filteredIndexes.indexOf(currentIdx);
+        if (pos < filteredIndexes.length - 1) openProduct(filteredIndexes[pos + 1]);
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!detailSection.classList.contains('visible')) return;
+        if (e.key === 'ArrowLeft') modalPrev.click();
+        if (e.key === 'ArrowRight') modalNext.click();
+        if (e.key === 'Escape') closeModal();
+    });
+
+    // ─── Close ────────────────────────────────────────────────────────
     function closeModal() {
         modalOverlay.classList.remove('active');
         detailSection.classList.remove('visible');
@@ -169,15 +244,22 @@
     modalClose.addEventListener('click', closeModal);
     modalOverlay.addEventListener('click', closeModal);
 
+    // ─── Color Variant ──────────────────────────────────────────────────
     function showColorVariant(ci) {
         const p = currentProduct;
         if (!p.colors || !p.colors[ci]) return;
         const color = p.colors[ci];
         buildThumbs(ci);
-        if (color.imgs && color.imgs.length > 0) showMainImage(color.imgs[0]);
-        else showMainImage(p.img);
+        if (color.imgs && color.imgs.length > 0) {
+            showMainImage(color.imgs[0]);
+        } else if (p.has3d) {
+            show3D();
+        } else {
+            showNoImage();
+        }
     }
 
+    // ─── Gallery Thumbs ─────────────────────────────────────────────────
     function buildThumbs(colorIdx) {
         const p = currentProduct;
         let html = '';
@@ -187,29 +269,18 @@
             html += `<div class="gallery-thumb thumb-3d" data-action="3d"><span>🎲 3D</span></div>`;
         }
 
-        const mainImg = (p.imgs && p.imgs.length > 0) ? p.imgs[0] :
-                        (p.colors && p.colors[ci] && p.colors[ci].imgs && p.colors[ci].imgs.length > 0) ? p.colors[ci].imgs[0] :
-                        p.img;
-
-        html += `<div class="gallery-thumb active" data-action="img" data-src="${mainImg}">
-            <img src="${mainImg}" alt="${p.name}">
-        </div>`;
-
-        if (p.colors && p.colors[ci] && p.colors[ci].imgs) {
-            p.colors[ci].imgs.forEach((imgSrc, i) => {
-                if (i === 0) return;
-                html += `<div class="gallery-thumb" data-action="img" data-src="${imgSrc}">
-                    <img src="${imgSrc}" alt="${p.name}">
-                </div>`;
-            });
-        } else if (p.imgs && p.imgs.length > 1) {
-            p.imgs.forEach((imgSrc, i) => {
-                if (i === 0) return;
-                html += `<div class="gallery-thumb" data-action="img" data-src="${imgSrc}">
-                    <img src="${imgSrc}" alt="${p.name}">
-                </div>`;
-            });
+        let imgList = [];
+        if (p.colors && p.colors[ci] && p.colors[ci].imgs && p.colors[ci].imgs.length > 0) {
+            imgList = p.colors[ci].imgs;
+        } else if (p.imgs && p.imgs.length > 0) {
+            imgList = p.imgs;
         }
+
+        imgList.forEach((imgSrc, i) => {
+            html += `<div class="gallery-thumb ${i === 0 && !p.has3d ? 'active' : ''}" data-action="img" data-src="${imgSrc}">
+                <img src="${imgSrc}" alt="${p.name}">
+            </div>`;
+        });
 
         galleryThumbs.innerHTML = html;
 
@@ -224,6 +295,7 @@
     }
 
     function showMainImage(src) {
+        if (!src) { showNoImage(); return; }
         galleryImg.src = src;
         galleryImg.alt = currentProduct ? currentProduct.name : '';
         galleryImg.style.display = 'block';
