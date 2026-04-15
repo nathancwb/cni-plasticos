@@ -22,6 +22,7 @@
     const sCat = document.getElementById('s-cat');
     const sMat = document.getElementById('s-mat');
     const sDim = document.getElementById('s-dim');
+    const sCodigo = document.getElementById('s-codigo');
     const sPedido = document.getElementById('s-pedido');
 
     let currentIdx = -1;
@@ -147,6 +148,7 @@
         sCat.textContent = p.specs.categoria;
         sMat.textContent = p.specs.material;
         sDim.textContent = p.specs.dimensao;
+        sCodigo.textContent = p.specs.codigo || '';
         sPedido.textContent = p.specs.pedido_minimo || '';
 
         // Badge "Disponível versão com pregos"

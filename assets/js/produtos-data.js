@@ -64,9 +64,9 @@ const PRODUCTS = [
     "name": "Isolador Tipo Roldana 48 (Grande Superforte)",
     "desc": "Roldana extra-grande sem prego. Produzida em polímero plástico isolante, pigmentado, alta densidade, alta resistência ao tempo e ao desgaste, alta resistência a tração. Usos comuns: Cercas elétricas rurais, Isolamento elétrico residencial e industrial.",
     "specs": { "categoria": "Isoladores", "material": "Polímero plástico isolante", "dimensao": "L: 48mm C: 43mm A: 48mm", "codigo": "Preto: 263 | Amarelo: 259", "pedido_minimo": "100 unidades" },
-    "img": "assets/images/products/variants/roldana-48/untitled-1.jpg",
+    "img": "assets/images/products/variants/roldana-48/roldana-48-amarelo.jpg",
     "colors": [
-      { "name": "Preto", "class": "preto", "cod": "263", "imgs": ["assets/images/products/variants/roldana-48/untitled-1.jpg"] },
+      { "name": "Preto", "class": "preto", "cod": "263", "imgs": [] },
       { "name": "Amarelo", "class": "amarelo", "cod": "259", "imgs": ["assets/images/products/variants/roldana-48/roldana-48-amarelo.jpg"] }
     ]
   },
@@ -134,8 +134,8 @@ const PRODUCTS = [
     "specs": { "categoria": "Isoladores", "material": "Polímero + Aço Zincado", "dimensao": "L: 27mm C: 71mm A: 20mm", "codigo": "Preto: 876 | Amarelo: 875", "pedido_minimo": "100 unidades" },
     "img": "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg",
     "colors": [
-      { "name": "Preto", "class": "preto", "cod": "876", "imgs": ["assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-2.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-3.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "875", "imgs": ["assets/images/products/variants/gancho-7cm/gancho-novo-7cm-4.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-5.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-6.jpg"] }
+      { "name": "Preto", "class": "preto", "cod": "876", "imgs": ["assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-3.jpg"] },
+      { "name": "Amarelo", "class": "amarelo", "cod": "875", "imgs": ["assets/images/products/variants/gancho-7cm/gancho-novo-7cm-4.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-5.jpg"] }
     ]
   },
 
@@ -172,10 +172,10 @@ const PRODUCTS = [
     "name": "Isolador Gancho Anel CNI — Curto 10,5 CM",
     "desc": "Produto exclusivo e patenteado CNI. Possui um sistema de trava inteligente que impede a saída do fio após o encaixe, oferecendo maior segurança e confiabilidade no isolamento. Usos comuns: Cercas elétricas rurais que exigem maior afastamento e isolamento seguro da linha condutora.",
     "specs": { "categoria": "Isoladores", "material": "Polímero plástico isolante", "dimensao": "Produto exclusivo CNI — consulte", "codigo": "Preto: 954 | Amarelo: 953", "pedido_minimo": "100 unidades" },
-    "img": "assets/images/products/variants/gancho-cni/isolador-gancho-curto-01-1.jpg",
+    "img": "assets/images/products/variants/gancho-cni/isolador-gancho-curto-01.jpg",
     "colors": [
-      { "name": "Preto", "class": "preto", "cod": "954", "imgs": ["assets/images/products/variants/gancho-cni/isolador-gancho-curto-01-1.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "953", "imgs": ["assets/images/products/variants/gancho-cni/isolador-gancho-curto-01.jpg"] }
+      { "name": "Preto", "class": "preto", "cod": "954", "imgs": ["assets/images/products/variants/gancho-cni/isolador-gancho-curto-01.jpg"] },
+      { "name": "Amarelo", "class": "amarelo", "cod": "953", "imgs": ["assets/images/products/variants/gancho-cni/isolador-gancho-curto-01-1.jpg"] }
     ]
   },
 
@@ -185,10 +185,10 @@ const PRODUCTS = [
     "name": "Isolador Gancho Anel CNI — Longo 20 CM",
     "desc": "Produto exclusivo e patenteado CNI. Possui um sistema de trava inteligente que impede a saída do fio após o encaixe, oferecendo maior segurança e confiabilidade no isolamento. Usos comuns: Cercas elétricas rurais que exigem maior afastamento e isolamento seguro da linha condutora.",
     "specs": { "categoria": "Isoladores", "material": "Polímero plástico isolante", "dimensao": "Produto exclusivo CNI — consulte", "codigo": "Preto: 956 | Amarelo: 955", "pedido_minimo": "50 unidades" },
-    "img": "assets/images/products/variants/gancho-cni/isolador-gancho-longo-01-1.jpg",
+    "img": "assets/images/products/variants/gancho-cni/whatsapp-image-2025-09-26-at-11-39-19.jpg",
     "colors": [
-      { "name": "Preto", "class": "preto", "cod": "956", "imgs": ["assets/images/products/variants/gancho-cni/isolador-gancho-longo-01-1.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "955", "imgs": ["assets/images/products/variants/gancho-cni/whatsapp-image-2025-09-26-at-11-39-19.jpg"] }
+      { "name": "Preto", "class": "preto", "cod": "956", "imgs": ["assets/images/products/variants/gancho-cni/whatsapp-image-2025-09-26-at-11-39-19.jpg"] },
+      { "name": "Amarelo", "class": "amarelo", "cod": "955", "imgs": ["assets/images/products/variants/gancho-cni/isolador-gancho-longo-01-1.jpg"] }
     ]
   },
 
@@ -210,15 +210,15 @@ const PRODUCTS = [
     "cat": "Isoladores",
     "name": "Isolador Tipo Haste",
     "desc": "A ÚNICA DO MERCADO COM BARRA DE AÇO CARBONO DE PONTA A PONTA. Produzido em polímero plástico isolante. Pigmentado, alta densidade, alta resistência ao tempo e ao desgaste. Usos comuns: Piqueteamento móvel em pastagens.",
-    "specs": { "categoria": "Isoladores", "material": "Polímero + Aço Carbono interno", "dimensao": "L: 85mm C: 116mm A: 35mm", "codigo": "Amarelo: 419", "pedido_minimo": "12 unidades (1 caixa)" },
+    "specs": { "categoria": "Isoladores", "material": "Polímero + Aço Carbono interno", "dimensao": "L: 85mm C: 116cm A: 35mm", "codigo": "Amarelo: 419", "pedido_minimo": "12 unidades (1 caixa)" },
     "img": "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-a.jpg",
     "imgs": [
       "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-a.jpg",
       "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-b.jpg",
-      "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-001.jpg",
-      "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-002.jpg"
+      "assets/images/products/variants/haste/haste-para-cerca-eletrica-aco.jpg"
     ]
   },
+
 
   // ══════════════════════════════════════════
   //  CATEGORIA: PORTEIRAS E CATRACAS
@@ -233,7 +233,7 @@ const PRODUCTS = [
     "img": "assets/images/products/variants/porteira/porteira-curta-1.jpg",
     "colors": [
       { "name": "Preto", "class": "preto", "cod": "186", "imgs": ["assets/images/products/variants/porteira/porteira-curta-1.jpg","assets/images/products/variants/porteira/porteira-curta-2.jpg","assets/images/products/variants/porteira/porteira-curta-3.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "196", "imgs": ["assets/images/products/variants/porteira/porteira-curta-14.jpg","assets/images/products/variants/porteira/porteira-curta-15.jpg","assets/images/products/variants/porteira/porteira-curta-16.jpg"] }
+      { "name": "Amarelo", "class": "amarelo", "cod": "196", "imgs": [] }
     ]
   },
 
@@ -243,10 +243,10 @@ const PRODUCTS = [
     "name": "Porteira Cerca Elétrica Mola — Longa 4M",
     "desc": "Produzido em polímero plástico isolante. Mola galvanizada de alta durabilidade com cabo atrelado. Estica de 50 centímetros até 4 metros. Suporta até 10kg de peso. Alta resistência ao tempo e ao desgaste.",
     "specs": { "categoria": "Porteiras e Catracas", "material": "Polímero + Mola Galvanizada", "dimensao": "Consulte CNI", "codigo": "Preto: 951 | Amarelo: 932", "pedido_minimo": "2 unidades" },
-    "img": "assets/images/products/variants/porteira/porteira-longa-1.jpg",
+    "img": "assets/images/products/variants/porteira/porteira-longa-12.jpg",
     "colors": [
-      { "name": "Preto", "class": "preto", "cod": "951", "imgs": ["assets/images/products/variants/porteira/porteira-longa-1.jpg","assets/images/products/variants/porteira/porteira-longa-2.jpg","assets/images/products/variants/porteira/porteira-longa-3.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "932", "imgs": ["assets/images/products/variants/porteira/porteira-longa-10.jpg","assets/images/products/variants/porteira/porteira-longa-11.jpg","assets/images/products/variants/porteira/porteira-longa-12.jpg"] }
+      { "name": "Preto", "class": "preto", "cod": "951", "imgs": ["assets/images/products/variants/porteira/porteira-longa-12.jpg","assets/images/products/variants/porteira/porteira-longa-13.jpg"] },
+      { "name": "Amarelo", "class": "amarelo", "cod": "932", "imgs": ["assets/images/products/variants/porteira/porteira-longa-3.jpg","assets/images/products/variants/porteira/porteira-longa-14.jpg"] }
     ]
   },
 
@@ -256,10 +256,10 @@ const PRODUCTS = [
     "name": "Porteira Cerca Elétrica Mola — Longa 6M",
     "desc": "Produzido em polímero plástico isolante. Mola galvanizada de alta durabilidade. Estica de 50 centímetros até 6 metros. Suporta até 10kg de peso. Alta resistência ao tempo e ao desgaste.",
     "specs": { "categoria": "Porteiras e Catracas", "material": "Polímero + Mola Galvanizada", "dimensao": "L: 48mm C: 64mm A: 48mm | Extensão: até 6m", "codigo": "Preto: 489 | Amarelo: 199", "pedido_minimo": "2 unidades" },
-    "img": "assets/images/products/variants/porteira/porteira-longa-20.jpg",
+    "img": "assets/images/products/variants/porteira/porteira-longa-22.jpg",
     "colors": [
-      { "name": "Preto", "class": "preto", "cod": "489", "imgs": ["assets/images/products/variants/porteira/porteira-longa-20.jpg","assets/images/products/variants/porteira/porteira-longa-21.jpg","assets/images/products/variants/porteira/porteira-longa-22.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "199", "imgs": ["assets/images/products/variants/porteira/porteira-longa-30.jpg","assets/images/products/variants/porteira/porteira-longa-31.jpg","assets/images/products/variants/porteira/porteira-longa-32.jpg"] }
+      { "name": "Preto", "class": "preto", "cod": "489", "imgs": ["assets/images/products/variants/porteira/porteira-longa-22.jpg","assets/images/products/variants/porteira/porteira-longa-23.jpg"] },
+      { "name": "Amarelo", "class": "amarelo", "cod": "199", "imgs": ["assets/images/products/variants/porteira/porteira-longa-7.jpg","assets/images/products/variants/porteira/porteira-longa-4.jpg"] }
     ]
   },
 
@@ -395,11 +395,11 @@ const PRODUCTS = [
     "name": "Clip Aplicação Porcelanato",
     "desc": "Produzido em polímero plástico. Fácil aplicação. Disponível nas aberturas 1mm, 1,5mm e 2mm.",
     "specs": { "categoria": "Produtos Gerais", "material": "Polímero plástico", "dimensao": "L: 30mm C: 33mm A: 45mm", "codigo": "1mm: 347 | 1,5mm: 369 | 2mm: 368", "pedido_minimo": "1000 unidades" },
-    "img": "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg",
+    "img": "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg",
     "imgs": [
+      "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg",
       "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg",
-      "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-a.jpg",
-      "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg"
+      "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-a.jpg"
     ]
   },
 
