@@ -22,8 +22,9 @@
     const sCat = document.getElementById('s-cat');
     const sMat = document.getElementById('s-mat');
     const sDim = document.getElementById('s-dim');
-    const sCodigo = document.getElementById('s-codigo');
     const sPedido = document.getElementById('s-pedido');
+    const singleCodigo = document.getElementById('single-codigo');
+    const singleCodigoVal = document.getElementById('single-codigo-value');
 
     let currentIdx = -1;
     let currentProduct = null;
@@ -148,7 +149,6 @@
         sCat.textContent = p.specs.categoria;
         sMat.textContent = p.specs.material;
         sDim.textContent = p.specs.dimensao;
-        sCodigo.textContent = p.specs.codigo || '';
         sPedido.textContent = p.specs.pedido_minimo || '';
 
         // Badge "Disponível versão com pregos"
@@ -163,7 +163,10 @@
         }
 
         // Color swatches — sempre começa no índice 0 (Preto geralmente)
+        // Código display
         if (p.colors && p.colors.length > 0) {
+            // Para produtos com cores, o código já aparece em cada swatch
+            singleCodigo.style.display = 'none';
             variantsSection.style.display = 'block';
             let swatchHTML = '';
             p.colors.forEach((c, ci) => {
@@ -188,6 +191,13 @@
             showColorVariant(0);
         } else {
             variantsSection.style.display = 'none';
+            // Mostra código no topo para produtos sem variante de cor
+            if (p.specs.codigo) {
+                singleCodigoVal.textContent = p.specs.codigo;
+                singleCodigo.style.display = 'block';
+            } else {
+                singleCodigo.style.display = 'none';
+            }
             buildThumbs();
             // Only show main image if there is one
             if (p.img) {

@@ -1027,6 +1027,14 @@
                         <div class="color-swatches" id="color-swatches"></div>
                     </div>
 
+                    <!-- Código para produtos sem variante de cor -->
+                    <div id="single-codigo" style="display:none;margin-bottom:16px;">
+                        <h4 style="font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#6b7280;margin-bottom:8px;">Código</h4>
+                        <div class="color-swatch" style="display:inline-flex;pointer-events:none;border-color:#e5e7eb;">
+                            <span id="single-codigo-value" style="font-weight:500;"></span>
+                        </div>
+                    </div>
+
                     <h4
                         style="font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--dark-sea-blue);margin-bottom:10px">
                         Especificações Técnicas</h4>
@@ -1042,10 +1050,6 @@
                         <tr>
                             <td>Dimensão</td>
                             <td id="s-dim"></td>
-                        </tr>
-                        <tr id="row-codigo">
-                            <td>Código</td>
-                            <td id="s-codigo"></td>
                         </tr>
                         <tr id="row-pedido">
                             <td>Pedido mínimo</td>

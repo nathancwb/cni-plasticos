@@ -211,11 +211,11 @@ const PRODUCTS = [
     "name": "Isolador Tipo Haste",
     "desc": "A ÚNICA DO MERCADO COM BARRA DE AÇO CARBONO DE PONTA A PONTA. Produzido em polímero plástico isolante. Pigmentado, alta densidade, alta resistência ao tempo e ao desgaste. Usos comuns: Piqueteamento móvel em pastagens.",
     "specs": { "categoria": "Isoladores", "material": "Polímero + Aço Carbono interno", "dimensao": "L: 85mm C: 116cm A: 35mm", "codigo": "Amarelo: 419", "pedido_minimo": "12 unidades (1 caixa)" },
-    "img": "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-a.jpg",
+    "img": "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-001.jpg",
     "imgs": [
-      "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-a.jpg",
-      "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-b.jpg",
-      "assets/images/products/variants/haste/haste-para-cerca-eletrica-aco.jpg"
+      "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-001.jpg",
+      "assets/images/products/variants/haste/haste-para-cerca-eletrica-120cm-6-isoladores-002.jpg",
+      "assets/images/products/variants/haste/haste-para-cerca-eletrica-116cm-6-isoladores-b.jpg"
     ]
   },
 
