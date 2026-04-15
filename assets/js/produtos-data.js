@@ -134,7 +134,7 @@ const PRODUCTS = [
     "specs": { "categoria": "Isoladores", "material": "Polímero + Aço Zincado", "dimensao": "L: 27mm C: 71mm A: 20mm", "codigo": "Preto: 876 | Amarelo: 875", "pedido_minimo": "100 unidades" },
     "img": "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg",
     "colors": [
-      { "name": "Preto", "class": "preto", "cod": "876", "imgs": ["assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-3.jpg"] },
+      { "name": "Preto", "class": "preto", "cod": "876", "imgs": ["assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg"] },
       { "name": "Amarelo", "class": "amarelo", "cod": "875", "imgs": ["assets/images/products/variants/gancho-7cm/gancho-novo-7cm-4.jpg","assets/images/products/variants/gancho-7cm/gancho-novo-7cm-5.jpg"] }
     ]
   },
@@ -246,7 +246,7 @@ const PRODUCTS = [
     "img": "assets/images/products/variants/porteira/porteira-longa-12.jpg",
     "colors": [
       { "name": "Preto", "class": "preto", "cod": "951", "imgs": ["assets/images/products/variants/porteira/porteira-longa-12.jpg","assets/images/products/variants/porteira/porteira-longa-13.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "932", "imgs": ["assets/images/products/variants/porteira/porteira-longa-3.jpg","assets/images/products/variants/porteira/porteira-longa-14.jpg"] }
+      { "name": "Amarelo", "class": "amarelo", "cod": "932", "imgs": ["assets/images/products/variants/porteira/porteira-longa-14.jpg","assets/images/products/variants/porteira/porteira-longa-15.jpg"] }
     ]
   },
 
@@ -259,7 +259,7 @@ const PRODUCTS = [
     "img": "assets/images/products/variants/porteira/porteira-longa-22.jpg",
     "colors": [
       { "name": "Preto", "class": "preto", "cod": "489", "imgs": ["assets/images/products/variants/porteira/porteira-longa-22.jpg","assets/images/products/variants/porteira/porteira-longa-23.jpg"] },
-      { "name": "Amarelo", "class": "amarelo", "cod": "199", "imgs": ["assets/images/products/variants/porteira/porteira-longa-7.jpg","assets/images/products/variants/porteira/porteira-longa-4.jpg"] }
+      { "name": "Amarelo", "class": "amarelo", "cod": "199", "imgs": ["assets/images/products/variants/porteira/porteira-longa-41.jpg","assets/images/products/variants/porteira/porteira-longa-47.jpg"] }
     ]
   },
 
@@ -397,9 +397,7 @@ const PRODUCTS = [
     "specs": { "categoria": "Produtos Gerais", "material": "Polímero plástico", "dimensao": "L: 30mm C: 33mm A: 45mm", "codigo": "1mm: 347 | 1,5mm: 369 | 2mm: 368", "pedido_minimo": "1000 unidades" },
     "img": "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg",
     "imgs": [
-      "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg",
-      "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg",
-      "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso-a.jpg"
+      "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg"
     ]
   },
 
