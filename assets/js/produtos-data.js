@@ -395,9 +395,9 @@ const PRODUCTS = [
     "name": "Clip Aplicação Porcelanato",
     "desc": "Produzido em polímero plástico. Fácil aplicação. Disponível nas aberturas 1mm, 1,5mm e 2mm.",
     "specs": { "categoria": "Produtos Gerais", "material": "Polímero plástico", "dimensao": "L: 30mm C: 33mm A: 45mm", "codigo": "1mm: 347 | 1,5mm: 369 | 2mm: 368", "pedido_minimo": "1000 unidades" },
-    "img": "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg",
+    "img": "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg",
     "imgs": [
-      "assets/images/products/variants/clip/nivelador-piso-porcelanato.jpg"
+      "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg"
     ]
   },
 
