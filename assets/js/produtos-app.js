@@ -33,10 +33,10 @@
     let filteredIndexes = [];
 
     const categoryIcons = {
-        'Isoladores': '⚡',
-        'Porteiras e Catracas': '🚪',
-        'Fios, Cabos, Tubos e Chaves': '🔌',
-        'Produtos Gerais': '📦'
+        'Isoladores': '',
+        'Porteiras e Catracas': '',
+        'Fios, Cabos, Tubos e Chaves': '',
+        'Produtos Gerais': ''
     };
 
     // ─── Build full catalog ───────────────────────────────────────────
@@ -56,21 +56,18 @@
         let navHTML = '<div class="cat-nav" id="cat-nav">';
         categoryOrder.forEach(cat => {
             const slug = cat.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-            const icon = categoryIcons[cat] || '📦';
-            navHTML += `<a class="cat-nav-link" href="#cat-${slug}">${icon} ${cat}</a>`;
+            navHTML += `<a class="cat-nav-link" href="#cat-${slug}">${cat}</a>`;
         });
         navHTML += '</div>';
 
         let sectionsHTML = '';
         categoryOrder.forEach(cat => {
             const slug = cat.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-            const icon = categoryIcons[cat] || '📦';
             const items = categoryMap[cat];
 
             sectionsHTML += `
             <div class="cat-section" id="cat-${slug}">
                 <div class="cat-section-header">
-                    <span class="cat-section-icon">${icon}</span>
                     <h2 class="cat-section-title">${cat}</h2>
                     <span class="cat-section-count">${items.length} produto${items.length > 1 ? 's' : ''}</span>
                 </div>
