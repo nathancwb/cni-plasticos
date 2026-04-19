@@ -1,0 +1,180 @@
+{
+  "produtos": [
+    {
+      "id": "porteira-curta",
+      "cat": "Porteiras e Catracas",
+      "name": "Porteira Cerca Elétrica Mola — Curta 10CM",
+      "desc": "Produzido em polímero plástico isolante. Mola produzida em aço carbono zincado. Suporta até 10kg de peso. Suporta 10cm de esticamento. Alta resistência ao tempo e ao desgaste.",
+      "specs": {
+        "categoria": "Porteiras e Catracas",
+        "material": "Polímero + Aço Carbono Zincado",
+        "dimensao": "L: 59mm C: 212mm A: 59mm",
+        "codigo": "Preto: 186 | Amarelo: 196",
+        "pedido_minimo": "5 unidades (1 pacote)"
+      },
+      "img": "assets/images/products/variants/porteira/porteira-curta-1.jpg",
+      "colors": [
+        {
+          "name": "Preto",
+          "class": "preto",
+          "cod": "186",
+          "imgs": [
+            "assets/images/products/variants/porteira/porteira-curta-1.jpg",
+            "assets/images/products/variants/porteira/porteira-curta-2.jpg",
+            "assets/images/products/variants/porteira/porteira-curta-3.jpg"
+          ]
+        },
+        {
+          "name": "Amarelo",
+          "class": "amarelo",
+          "cod": "196",
+          "imgs": []
+        }
+      ]
+    },
+    {
+      "id": "porteira-4m",
+      "cat": "Porteiras e Catracas",
+      "name": "Porteira Cerca Elétrica Mola — Longa 4M",
+      "desc": "Produzido em polímero plástico isolante. Mola galvanizada de alta durabilidade com cabo atrelado. Estica de 50 centímetros até 4 metros. Suporta até 10kg de peso. Alta resistência ao tempo e ao desgaste.",
+      "specs": {
+        "categoria": "Porteiras e Catracas",
+        "material": "Polímero + Mola Galvanizada",
+        "dimensao": "Consulte CNI",
+        "codigo": "Preto: 951 | Amarelo: 932",
+        "pedido_minimo": "2 unidades"
+      },
+      "img": "assets/images/products/variants/porteira/porteira-longa-12.jpg",
+      "colors": [
+        {
+          "name": "Preto",
+          "class": "preto",
+          "cod": "951",
+          "imgs": [
+            "assets/images/products/variants/porteira/porteira-longa-12.jpg",
+            "assets/images/products/variants/porteira/porteira-longa-13.jpg"
+          ]
+        },
+        {
+          "name": "Amarelo",
+          "class": "amarelo",
+          "cod": "932",
+          "imgs": [
+            "assets/images/products/variants/porteira/porteira-longa-14.jpg",
+            "assets/images/products/variants/porteira/porteira-longa-15.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "porteira-6m",
+      "cat": "Porteiras e Catracas",
+      "name": "Porteira Cerca Elétrica Mola — Longa 6M",
+      "desc": "Produzido em polímero plástico isolante. Mola galvanizada de alta durabilidade. Estica de 50 centímetros até 6 metros. Suporta até 10kg de peso. Alta resistência ao tempo e ao desgaste.",
+      "specs": {
+        "categoria": "Porteiras e Catracas",
+        "material": "Polímero + Mola Galvanizada",
+        "dimensao": "L: 48mm C: 64mm A: 48mm | Extensão: até 6m",
+        "codigo": "Preto: 489 | Amarelo: 199",
+        "pedido_minimo": "2 unidades"
+      },
+      "img": "assets/images/products/variants/porteira/porteira-longa-22.jpg",
+      "colors": [
+        {
+          "name": "Preto",
+          "class": "preto",
+          "cod": "489",
+          "imgs": [
+            "assets/images/products/variants/porteira/porteira-longa-22.jpg",
+            "assets/images/products/variants/porteira/porteira-longa-23.jpg"
+          ]
+        },
+        {
+          "name": "Amarelo",
+          "class": "amarelo",
+          "cod": "199",
+          "imgs": [
+            "assets/images/products/variants/porteira/porteira-longa-41.jpg",
+            "assets/images/products/variants/porteira/porteira-longa-47.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "engate-porteira",
+      "cat": "Porteiras e Catracas",
+      "name": "Engate Isolado para Porteira",
+      "desc": "Produzido em polímero plástico isolante. Parafuso produzido em aço zincado 1/4\". Chapa vazada de engate para até 3 porteiras. Aço galvanizado zincado. Alta resistência ao tempo e ao desgaste.",
+      "specs": {
+        "categoria": "Porteiras e Catracas",
+        "material": "Polímero + Aço Galvanizado",
+        "dimensao": "L: 36mm C: 133mm A: 29mm",
+        "codigo": "Preto: 421 | Amarelo: 422",
+        "pedido_minimo": "25 unidades"
+      },
+      "img": "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-a-copia-2.jpg",
+      "colors": [
+        {
+          "name": "Preto",
+          "class": "preto",
+          "cod": "421",
+          "imgs": [
+            "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-a-copia-2.jpg",
+            "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto-b.jpg",
+            "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-preto.jpg"
+          ]
+        },
+        {
+          "name": "Amarelo",
+          "class": "amarelo",
+          "cod": "422",
+          "imgs": [
+            "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-a.jpg",
+            "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-aa.jpg",
+            "assets/images/products/variants/engate/engate-batente-porteira-cerca-eletrica-rural-ac.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "catraca-isolada",
+      "cat": "Porteiras e Catracas",
+      "name": "Catraca Isolada Reforçada até 100 KGF",
+      "desc": "Produzido em aço carbono galvanizado. Castanha produzida em plástico de alta densidade. Maior durabilidade contra ação do tempo. Resistência de tração é de 100KGF.",
+      "specs": {
+        "categoria": "Porteiras e Catracas",
+        "material": "Aço Carbono Galvanizado + Plástico HD",
+        "dimensao": "L: 32mm C: 102mm A: 52mm",
+        "codigo": "Amarelo: 86",
+        "pedido_minimo": "50 unidades"
+      },
+      "img": "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-1.jpg",
+      "imgs": [
+        "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-1.jpg",
+        "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-2.jpg",
+        "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural-3.jpg",
+        "assets/images/products/variants/catraca-isolada/catraca-isolada-cerca-eletrica-rural.jpg"
+      ]
+    },
+    {
+      "id": "catraca-extra-forte",
+      "cat": "Porteiras e Catracas",
+      "name": "Catraca Extra Forte Esticadora",
+      "desc": "Produzida em aço carbono galvanizado. Catraca grande — SUPER REFORÇADA. Maior durabilidade contra ação do tempo. Em terrenos planos estica o arame até 1200m. Resistência de tração é de 1000 KG/peso.",
+      "specs": {
+        "categoria": "Porteiras e Catracas",
+        "material": "Aço Carbono Galvanizado",
+        "dimensao": "L: 61mm C: 75mm A: 42mm",
+        "codigo": "Metálico: 498",
+        "pedido_minimo": "50 unidades (1 pacote)"
+      },
+      "img": "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-1.jpg",
+      "imgs": [
+        "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-1.jpg",
+        "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-2.jpg",
+        "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-3.jpg",
+        "assets/images/products/variants/catraca-lisa/catraca-esticadora-reforcada-4.jpg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "produtos": [
+    {
+      "id": "clip",
+      "cat": "Produtos Gerais",
+      "name": "Clip Aplicação Porcelanato",
+      "desc": "Produzido em polímero plástico. Fácil aplicação. Disponível nas aberturas 1mm, 1,5mm e 2mm.",
+      "specs": {
+        "categoria": "Produtos Gerais",
+        "material": "Polímero plástico",
+        "dimensao": "L: 30mm C: 33mm A: 45mm",
+        "codigo": "1mm: 347 | 1,5mm: 369 | 2mm: 368",
+        "pedido_minimo": "1000 unidades"
+      },
+      "img": "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg",
+      "imgs": [
+        "assets/images/products/variants/clip/nivelador-aplicador-clip-porcelanato-piso.jpg"
+      ]
+    },
+    {
+      "id": "cunha",
+      "cat": "Produtos Gerais",
+      "name": "Cunha Aplicação Porcelanato 18MM",
+      "desc": "Produzido em polímero plástico. Fácil aplicação.",
+      "specs": {
+        "categoria": "Produtos Gerais",
+        "material": "Polímero plástico",
+        "dimensao": "L: 18mm C: 95mm A: 17mm",
+        "codigo": "Preto: 18",
+        "pedido_minimo": "100 unidades"
+      },
+      "img": "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-1.jpg",
+      "imgs": [
+        "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-1.jpg",
+        "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-2.jpg",
+        "assets/images/products/variants/cunha/cunha-aplicacao-porcelanato-3.jpg"
+      ]
+    },
+    {
+      "id": "aro-multiuso",
+      "cat": "Produtos Gerais",
+      "name": "Aro Multiuso 8\"",
+      "desc": "Produzido em polímero plástico altamente resistente. Pigmentado, alta densidade e alta resistência ao desgaste e impacto. Disponível em eixo 1\" e 3/4\".",
+      "specs": {
+        "categoria": "Produtos Gerais",
+        "material": "Polímero plástico HD",
+        "dimensao": "L: 82mm C: 115mm A: 35mm",
+        "codigo": "Preto 1\": 302 | Preto 3/4\": 026",
+        "pedido_minimo": "1 unidade"
+      },
+      "img": "",
+      "imgs": []
+    }
+  ]
+}

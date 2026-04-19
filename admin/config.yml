@@ -86,18 +86,18 @@ collections:
   - name: catalogo_completo
     label: "📦 Catálogo de Produtos"
     files:
-      - name: produtos_db
-        label: "Todos os Produtos"
-        file: content/produtos-data.json
+      - name: produtos_isoladores
+        label: "⚡ Isoladores"
+        file: content/produtos-isoladores.json
         format: json
         fields:
           - name: produtos
-            label: "Lista de Produtos"
+            label: "Lista de Produtos (Isoladores)"
             widget: list
-            summary: "{{fields.name}} ({{fields.cat}})"
+            summary: "{{fields.name}}"
             fields:
               - { name: id, label: "ID (slug único, sem espaços)", widget: string }
-              - { name: cat, label: "Categoria", widget: string }
+              - { name: cat, label: "Categoria Interna (Não mexer)", widget: hidden, default: "Isoladores" }
               - { name: name, label: "Nome do Produto", widget: string }
               - { name: desc, label: "Descrição", widget: text }
               - name: specs
@@ -107,7 +107,7 @@ collections:
                   - { name: categoria, label: "Categoria", widget: string, required: false }
                   - { name: material, label: "Material", widget: string, required: false }
                   - { name: dimensao, label: "Dimensões", widget: string, required: false }
-                  - { name: codigo, label: "Códigos", widget: string, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
                   - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
               - { name: img, label: "Imagem Principal", widget: image, required: false }
               - name: imgs
@@ -125,7 +125,145 @@ collections:
                 fields:
                   - { name: name, label: "Nome da Cor", widget: string }
                   - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
-                  - { name: cod, label: "Código", widget: string, required: false }
+                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
+                  - name: imgs
+                    label: "Fotos desta cor"
+                    widget: list
+                    required: false
+                    field: { name: img, label: Imagem, widget: image }
+
+      - name: produtos_porteiras
+        label: "🚪 Porteiras e Catracas"
+        file: content/produtos-porteiras.json
+        format: json
+        fields:
+          - name: produtos
+            label: "Lista de Produtos (Porteiras e Catracas)"
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: id, label: "ID (slug único, sem espaços)", widget: string }
+              - { name: cat, label: "Categoria Interna (Não mexer)", widget: hidden, default: "Porteiras e Catracas" }
+              - { name: name, label: "Nome do Produto", widget: string }
+              - { name: desc, label: "Descrição", widget: text }
+              - name: specs
+                label: "Especificações (Tabela)"
+                widget: object
+                fields:
+                  - { name: categoria, label: "Categoria", widget: string, required: false }
+                  - { name: material, label: "Material", widget: string, required: false }
+                  - { name: dimensao, label: "Dimensões", widget: string, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
+                  - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
+              - { name: img, label: "Imagem Principal", widget: image, required: false }
+              - name: imgs
+                label: "Imagens Adicionais"
+                widget: list
+                required: false
+                field: { name: img, label: Imagem, widget: image }
+              - { name: has3d, label: "Possui modelo 3D?", widget: boolean, required: false, default: false }
+              - { name: model, label: "Arquivo 3D (.glb)", widget: file, required: false }
+              - name: colors
+                label: "Variações de Cor"
+                widget: list
+                required: false
+                summary: "{{fields.name}}"
+                fields:
+                  - { name: name, label: "Nome da Cor", widget: string }
+                  - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
+                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
+                  - name: imgs
+                    label: "Fotos desta cor"
+                    widget: list
+                    required: false
+                    field: { name: img, label: Imagem, widget: image }
+
+      - name: produtos_fios_chaves
+        label: "🔌 Fios, Cabos, Tubos e Chaves"
+        file: content/produtos-fios-chaves.json
+        format: json
+        fields:
+          - name: produtos
+            label: "Lista de Produtos (Fios, Cabos, Tubos e Chaves)"
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: id, label: "ID (slug único, sem espaços)", widget: string }
+              - { name: cat, label: "Categoria Interna (Não mexer)", widget: hidden, default: "Fios, Cabos, Tubos e Chaves" }
+              - { name: name, label: "Nome do Produto", widget: string }
+              - { name: desc, label: "Descrição", widget: text }
+              - name: specs
+                label: "Especificações (Tabela)"
+                widget: object
+                fields:
+                  - { name: categoria, label: "Categoria", widget: string, required: false }
+                  - { name: material, label: "Material", widget: string, required: false }
+                  - { name: dimensao, label: "Dimensões", widget: string, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
+                  - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
+              - { name: img, label: "Imagem Principal", widget: image, required: false }
+              - name: imgs
+                label: "Imagens Adicionais"
+                widget: list
+                required: false
+                field: { name: img, label: Imagem, widget: image }
+              - { name: has3d, label: "Possui modelo 3D?", widget: boolean, required: false, default: false }
+              - { name: model, label: "Arquivo 3D (.glb)", widget: file, required: false }
+              - name: colors
+                label: "Variações de Cor"
+                widget: list
+                required: false
+                summary: "{{fields.name}}"
+                fields:
+                  - { name: name, label: "Nome da Cor", widget: string }
+                  - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
+                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
+                  - name: imgs
+                    label: "Fotos desta cor"
+                    widget: list
+                    required: false
+                    field: { name: img, label: Imagem, widget: image }
+
+      - name: produtos_gerais
+        label: "📦 Produtos Gerais"
+        file: content/produtos-gerais.json
+        format: json
+        fields:
+          - name: produtos
+            label: "Lista de Produtos (Produtos Gerais)"
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: id, label: "ID (slug único, sem espaços)", widget: string }
+              - { name: cat, label: "Categoria Interna (Não mexer)", widget: hidden, default: "Produtos Gerais" }
+              - { name: name, label: "Nome do Produto", widget: string }
+              - { name: desc, label: "Descrição", widget: text }
+              - name: specs
+                label: "Especificações (Tabela)"
+                widget: object
+                fields:
+                  - { name: categoria, label: "Categoria", widget: string, required: false }
+                  - { name: material, label: "Material", widget: string, required: false }
+                  - { name: dimensao, label: "Dimensões", widget: string, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
+                  - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
+              - { name: img, label: "Imagem Principal", widget: image, required: false }
+              - name: imgs
+                label: "Imagens Adicionais"
+                widget: list
+                required: false
+                field: { name: img, label: Imagem, widget: image }
+              - { name: has3d, label: "Possui modelo 3D?", widget: boolean, required: false, default: false }
+              - { name: model, label: "Arquivo 3D (.glb)", widget: file, required: false }
+              - name: colors
+                label: "Variações de Cor"
+                widget: list
+                required: false
+                summary: "{{fields.name}}"
+                fields:
+                  - { name: name, label: "Nome da Cor", widget: string }
+                  - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
+                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
                   - name: imgs
                     label: "Fotos desta cor"
                     widget: list

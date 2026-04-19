@@ -168,7 +168,11 @@
             variantsSection.style.display = 'block';
             let swatchHTML = '';
             p.colors.forEach((c, ci) => {
-                const codLabel = c.cod ? `<small style="color:#6b7280;font-size:.7rem;">Cód: ${c.cod}</small>` : '';
+                let codText = c.cod;
+                if (Array.isArray(codText)) {
+                    codText = codText.join(' | ');
+                }
+                const codLabel = codText ? `<small style="color:#6b7280;font-size:.7rem;">Cód: ${codText}</small>` : '';
                 swatchHTML += `<button class="color-swatch${ci === 0 ? ' active' : ''}" data-color="${ci}">
                     <span class="color-dot ${c.class}"></span>
                     <span style="display:flex;flex-direction:column;align-items:flex-start;gap:1px">
@@ -191,7 +195,11 @@
             variantsSection.style.display = 'none';
             // Mostra código no topo para produtos sem variante de cor
             if (p.specs.codigo) {
-                singleCodigoVal.textContent = p.specs.codigo;
+                let codeVal = p.specs.codigo;
+                if (Array.isArray(codeVal)) {
+                    codeVal = codeVal.join(' | ');
+                }
+                singleCodigoVal.textContent = codeVal;
                 singleCodigo.style.display = 'block';
             } else {
                 singleCodigo.style.display = 'none';
@@ -357,9 +365,22 @@
     // Initialize
     async function initCatalog() {
         try {
-            const res = await fetch('/content/produtos-data.json');
-            const data = await res.json();
-            PRODUCTS = data.produtos || [];
+            const urls = [
+                '/content/produtos-isoladores.json',
+                '/content/produtos-porteiras.json',
+                '/content/produtos-fios-chaves.json',
+                '/content/produtos-gerais.json'
+            ];
+            const responses = await Promise.all(urls.map(u => fetch(u + '?_=' + Date.now()).catch(() => null)));
+            const dataArrays = await Promise.all(
+                responses.filter(r => r && r.ok).map(r => r.json())
+            );
+            
+            PRODUCTS = [];
+            dataArrays.forEach(d => {
+                if (d && d.produtos) PRODUCTS.push(...d.produtos);
+            });
+            
             buildFullCatalog();
         } catch (e) {
             console.error('Erro ao carregar o catálogo de produtos:', e);

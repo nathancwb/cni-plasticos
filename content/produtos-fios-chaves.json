@@ -1,0 +1,136 @@
+{
+  "produtos": [
+    {
+      "id": "chave-interruptora",
+      "cat": "Fios, Cabos, Tubos e Chaves",
+      "name": "Chave Interruptora",
+      "desc": "Produzido em polímero plástico isolante. Fabricado em PEAD de alta densidade com proteção ANTI-UV. Pigmentado, alta densidade, alta resistência ao tempo e ao desgaste.",
+      "specs": {
+        "categoria": "Fios, Cabos, Tubos e Chaves",
+        "material": "PEAD com proteção ANTI-UV",
+        "dimensao": "L: 35mm C: 150mm A: 40mm",
+        "codigo": "Vermelho: 921 | Amarelo: 920",
+        "pedido_minimo": "2 unidades"
+      },
+      "img": "",
+      "has3d": true,
+      "model": "assets/models/Peça_com cor.glb",
+      "imgs": []
+    },
+    {
+      "id": "cabo-160",
+      "cat": "Fios, Cabos, Tubos e Chaves",
+      "name": "Cabo Subterrâneo Reforçado Fio 1.60mm",
+      "desc": "A isolação interna é fabricada com polietileno de alta qualidade com isolação de até 30 mil volts. Fio condutor interno produzido com fio BWG16 galvanizado de 1.60mm.",
+      "specs": {
+        "categoria": "Fios, Cabos, Tubos e Chaves",
+        "material": "Polietileno + BWG16 Galvanizado",
+        "dimensao": "Extensão: 50 metros | Diâmetro externo: 7.5mm",
+        "codigo": "Amarelo: 878",
+        "pedido_minimo": "1 rolo com 50 metros"
+      },
+      "img": "assets/images/products/variants/cabo-subterr-aneo/amarelo-1.jpg",
+      "imgs": [
+        "assets/images/products/variants/cabo-subterr-aneo/amarelo-1.jpg",
+        "assets/images/products/variants/cabo-subterr-aneo/amarelo-2.jpg",
+        "assets/images/products/variants/cabo-subterr-aneo/amarelo-3.jpg"
+      ]
+    },
+    {
+      "id": "cabo-210",
+      "cat": "Fios, Cabos, Tubos e Chaves",
+      "name": "Cabo Subterrâneo Reforçado Premium Fio 2.10mm",
+      "desc": "A isolação interna é fabricada com polietileno de alta qualidade com isolação de até 30 mil volts. Fio condutor interno produzido com fio BWG14 galvanizado de 2.10mm.",
+      "specs": {
+        "categoria": "Fios, Cabos, Tubos e Chaves",
+        "material": "Polietileno + BWG14 Galvanizado",
+        "dimensao": "Extensão: 50 metros | Diâmetro externo: 7.5mm",
+        "codigo": "Preto: 929",
+        "pedido_minimo": "1 rolo com 50 metros"
+      },
+      "img": "assets/images/products/variants/cabo-subterr-aneo/preto-novo-1.jpg",
+      "imgs": [
+        "assets/images/products/variants/cabo-subterr-aneo/preto-novo-1.jpg",
+        "assets/images/products/variants/cabo-subterr-aneo/preto-novo-2.jpg",
+        "assets/images/products/variants/cabo-subterr-aneo/preto-novo-3.jpg"
+      ]
+    },
+    {
+      "id": "tubo-38",
+      "cat": "Fios, Cabos, Tubos e Chaves",
+      "name": "Tubo Isolador 3/8\" Super Reforçado",
+      "desc": "Produzido em polímero plástico isolante. Pigmentado de alta densidade e alta resistência ao tempo e ao desgaste. Furo interno: 4mm.",
+      "specs": {
+        "categoria": "Fios, Cabos, Tubos e Chaves",
+        "material": "Polímero plástico isolante",
+        "dimensao": "Extensão: 50m | Diâmetro externo: 9.52mm | Furo interno: 4mm",
+        "codigo": "Preto: 930 | Amarelo: 528",
+        "pedido_minimo": "1 rolo com 50 metros"
+      },
+      "img": "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-2.jpg",
+      "colors": [
+        {
+          "name": "Preto",
+          "class": "preto",
+          "cod": "930",
+          "imgs": [
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-2.jpg",
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-3.jpg"
+          ]
+        },
+        {
+          "name": "Amarelo",
+          "class": "amarelo",
+          "cod": "528",
+          "imgs": []
+        }
+      ]
+    },
+    {
+      "id": "tubo-716",
+      "cat": "Fios, Cabos, Tubos e Chaves",
+      "name": "Tubo Isolador 7/16\" Super Reforçado",
+      "desc": "Produzido em polímero plástico isolante. Pigmentado de alta densidade e alta resistência ao tempo e ao desgaste. Furo interno: 6mm.",
+      "specs": {
+        "categoria": "Fios, Cabos, Tubos e Chaves",
+        "material": "Polímero plástico isolante",
+        "dimensao": "Extensão: 50m | Diâmetro externo: 11.1mm | Furo interno: 6mm",
+        "codigo": "Preto: 936 | Amarelo: 545",
+        "pedido_minimo": "1 rolo com 50 metros"
+      },
+      "img": "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-4.jpg",
+      "colors": [
+        {
+          "name": "Preto",
+          "class": "preto",
+          "cod": "936",
+          "imgs": [
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-4.jpg",
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-5.jpg"
+          ]
+        },
+        {
+          "name": "Amarelo",
+          "class": "amarelo",
+          "cod": "545",
+          "imgs": []
+        }
+      ]
+    },
+    {
+      "id": "fio-eletroplastico",
+      "cat": "Fios, Cabos, Tubos e Chaves",
+      "name": "Fio Eletroplástico Inox Tradicional — 250M & 500M",
+      "desc": "Fabricado com fios plásticos em PEAD nobre, com proteção ANTI-UV, garantindo maior durabilidade ao tempo. Composto por 15 fios plásticos e 6 fios inox, totalizando 21 fios enrolados. Não enferruja, não quebra.",
+      "specs": {
+        "categoria": "Fios, Cabos, Tubos e Chaves",
+        "material": "PEAD + Inox (21 fios)",
+        "dimensao": "Espessura: 7.5mm | Opções: 250m e 500m",
+        "codigo": "Variadas 250M: 521 | Variadas 500M: 351",
+        "pedido_minimo": "1 rolo"
+      },
+      "img": "",
+      "imgs": []
+    }
+  ]
+}
