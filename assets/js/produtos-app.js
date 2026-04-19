@@ -28,6 +28,7 @@
 
     let currentIdx = -1;
     let currentProduct = null;
+    let PRODUCTS = [];
 
     // Índice de produtos por categoria (para prev/next dentro da lista filtrada)
     let filteredIndexes = [];
@@ -354,5 +355,16 @@
     };
 
     // Initialize
-    buildFullCatalog();
+    async function initCatalog() {
+        try {
+            const res = await fetch('/content/produtos-data.json');
+            const data = await res.json();
+            PRODUCTS = data.produtos || [];
+            buildFullCatalog();
+        } catch (e) {
+            console.error('Erro ao carregar o catálogo de produtos:', e);
+        }
+    }
+    
+    initCatalog();
 })();

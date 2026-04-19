@@ -81,3 +81,53 @@ collections:
           - { name: address, label: "Endereço completo", widget: string }
           - { name: instagram, label: "Link do Instagram", widget: string }
           - { name: facebook, label: "Link do Facebook", widget: string }
+
+  # ─── CATÁLOGO DE PRODUTOS ───────────────────────────────────────────────────
+  - name: catalogo_completo
+    label: "📦 Catálogo de Produtos"
+    files:
+      - name: produtos_db
+        label: "Todos os Produtos"
+        file: content/produtos-data.json
+        format: json
+        fields:
+          - name: produtos
+            label: "Lista de Produtos"
+            widget: list
+            summary: "{{fields.name}} ({{fields.cat}})"
+            fields:
+              - { name: id, label: "ID (slug único, sem espaços)", widget: string }
+              - { name: cat, label: "Categoria", widget: string }
+              - { name: name, label: "Nome do Produto", widget: string }
+              - { name: desc, label: "Descrição", widget: text }
+              - name: specs
+                label: "Especificações (Tabela)"
+                widget: object
+                fields:
+                  - { name: categoria, label: "Categoria", widget: string, required: false }
+                  - { name: material, label: "Material", widget: string, required: false }
+                  - { name: dimensao, label: "Dimensões", widget: string, required: false }
+                  - { name: codigo, label: "Códigos", widget: string, required: false }
+                  - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
+              - { name: img, label: "Imagem Principal", widget: image, required: false }
+              - name: imgs
+                label: "Imagens Adicionais"
+                widget: list
+                required: false
+                field: { name: img, label: Imagem, widget: image }
+              - { name: has3d, label: "Possui modelo 3D?", widget: boolean, required: false, default: false }
+              - { name: model, label: "Arquivo 3D (.glb)", widget: file, required: false }
+              - name: colors
+                label: "Variações de Cor"
+                widget: list
+                required: false
+                summary: "{{fields.name}}"
+                fields:
+                  - { name: name, label: "Nome da Cor", widget: string }
+                  - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
+                  - { name: cod, label: "Código", widget: string, required: false }
+                  - name: imgs
+                    label: "Fotos desta cor"
+                    widget: list
+                    required: false
+                    field: { name: img, label: Imagem, widget: image }
