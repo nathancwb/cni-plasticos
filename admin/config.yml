@@ -107,7 +107,7 @@ collections:
                   - { name: categoria, label: "Categoria", widget: string, required: false }
                   - { name: material, label: "Material", widget: string, required: false }
                   - { name: dimensao, label: "Dimensões", widget: string, required: false }
-                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: string, required: false }
                   - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
               - { name: img, label: "Imagem Principal", widget: image, required: false }
               - name: imgs
@@ -125,7 +125,7 @@ collections:
                 fields:
                   - { name: name, label: "Nome da Cor", widget: string }
                   - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
-                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
+                  - { name: cod, label: "Código para essa cor", widget: string, required: false }
                   - name: imgs
                     label: "Fotos desta cor"
                     widget: list
@@ -153,7 +153,7 @@ collections:
                   - { name: categoria, label: "Categoria", widget: string, required: false }
                   - { name: material, label: "Material", widget: string, required: false }
                   - { name: dimensao, label: "Dimensões", widget: string, required: false }
-                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: string, required: false }
                   - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
               - { name: img, label: "Imagem Principal", widget: image, required: false }
               - name: imgs
@@ -171,7 +171,7 @@ collections:
                 fields:
                   - { name: name, label: "Nome da Cor", widget: string }
                   - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
-                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
+                  - { name: cod, label: "Código para essa cor", widget: string, required: false }
                   - name: imgs
                     label: "Fotos desta cor"
                     widget: list
@@ -199,7 +199,7 @@ collections:
                   - { name: categoria, label: "Categoria", widget: string, required: false }
                   - { name: material, label: "Material", widget: string, required: false }
                   - { name: dimensao, label: "Dimensões", widget: string, required: false }
-                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: string, required: false }
                   - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
               - { name: img, label: "Imagem Principal", widget: image, required: false }
               - name: imgs
@@ -217,7 +217,7 @@ collections:
                 fields:
                   - { name: name, label: "Nome da Cor", widget: string }
                   - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
-                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
+                  - { name: cod, label: "Código para essa cor", widget: string, required: false }
                   - name: imgs
                     label: "Fotos desta cor"
                     widget: list
@@ -245,7 +245,7 @@ collections:
                   - { name: categoria, label: "Categoria", widget: string, required: false }
                   - { name: material, label: "Material", widget: string, required: false }
                   - { name: dimensao, label: "Dimensões", widget: string, required: false }
-                  - { name: codigo, label: "Código / Opções Adicionais", widget: list, required: false }
+                  - { name: codigo, label: "Código / Opções Adicionais", widget: string, required: false }
                   - { name: pedido_minimo, label: "Pedido Mínimo", widget: string, required: false }
               - { name: img, label: "Imagem Principal", widget: image, required: false }
               - name: imgs
@@ -263,7 +263,7 @@ collections:
                 fields:
                   - { name: name, label: "Nome da Cor", widget: string }
                   - { name: class, label: "Cor Visual (preto, amarelo...)", widget: string }
-                  - { name: cod, label: "Código para essa cor", widget: list, required: false }
+                  - { name: cod, label: "Código para essa cor", widget: string, required: false }
                   - name: imgs
                     label: "Fotos desta cor"
                     widget: list
