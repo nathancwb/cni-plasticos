@@ -542,40 +542,50 @@ img {
 
 .feature-list {
     margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
 }
 
 .feature-list li {
     display: flex;
-    gap: 20px;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
     align-items: flex-start;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s;
+}
+
+.feature-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 108, 188, 0.08);
+    border-color: rgba(0, 108, 188, 0.2);
 }
 
 .feature-list li:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid var(--border-color); /* restoring border because it's a card now */
 }
 
 .feature-icon {
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
-    background: rgba(0, 108, 188, 0.08);
-    border-radius: 14px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    background: var(--sea-blue);
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--sea-blue);
-    font-size: 1.8rem;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    color: #fff;
+    font-size: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 108, 188, 0.2);
 }
 
-.feature-list li:hover .feature-icon,
-.split-layout > div:hover .feature-icon {
-    background: var(--sea-blue);
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 108, 188, 0.2);
+.split-layout > div:hover .feature-icon,
+.feature-list li:hover .feature-icon {
+    transform: scale(1.05); /* Just a slight bump scale because it's already colored */
 }
 
 .feature-text strong {
