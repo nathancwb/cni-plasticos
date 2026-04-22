@@ -276,36 +276,28 @@
                 </div>
 
                 <div class="contact-form-wrapper">
-                    <form action="https://formsubmit.co/atendimento@cniplasticos.com.br" method="POST">
-                        <input type="hidden" name="_subject" value="Novo Contato da HOME - CNI Plásticos">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://cniplasticos.com.br/?sucesso=true">
-                        
+                    <form id="contact-form-home">
                         <div class="form-group">
-                            <label for="name">Nome Completo</label>
-                            <input type="text" id="name" name="Nome" class="form-control" placeholder="Seu nome" required>
+                            <label for="h-name">Nome Completo</label>
+                            <input type="text" id="h-name" name="from_name" class="form-control" placeholder="Seu nome" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">E-mail Corporativo</label>
-                            <input type="email" id="email" name="Email" class="form-control" placeholder="seu@email.com" required>
+                            <label for="h-email">E-mail</label>
+                            <input type="email" id="h-email" name="from_email" class="form-control" placeholder="seu@email.com" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Mensagem ou Cotação</label>
-                            <textarea id="message" name="Mensagem" class="form-control"
-                                placeholder="Descreva sua necessidade..." required></textarea>
+                            <label for="h-message">Mensagem ou Cotação</label>
+                            <textarea id="h-message" name="message" class="form-control" placeholder="Descreva sua necessidade..." required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary" style="width:100%;">Enviar Mensagem</button>
+                        <button type="submit" id="h-submit-btn" class="btn-primary" style="width:100%;">Enviar Mensagem</button>
                     </form>
-                    
+
                     <div id="form-success-msg-home" style="display:none; margin-top:20px; padding:15px; background:#e6f4ea; color:#1e8e3e; border-radius:8px; text-align:center; font-weight:500;">
-                        Obrigado! Sua mensagem foi enviada.
+                        ✅ Obrigado! Sua mensagem foi enviada com sucesso.
                     </div>
-                    <script>
-                        if (window.location.search.includes("sucesso=true")) {
-                            document.getElementById('form-success-msg-home').style.display = 'block';
-                            window.history.replaceState({}, document.title, window.location.pathname);
-                        }
-                    </script>
+                    <div id="form-error-msg-home" style="display:none; margin-top:20px; padding:15px; background:#fdecea; color:#c5221f; border-radius:8px; text-align:center; font-weight:500;">
+                        ❌ Ocorreu um erro. Tente novamente ou entre em contato pelo WhatsApp.
+                    </div>
                 </div>
             </div>
 
@@ -377,6 +369,33 @@
         set('cms-s3-img',    d.servico3_imagem);
       } catch(e) { /* fallback: imagens padrão já estão no HTML */ }
     })();
+    </script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init('Iu1iT2nOBJJcirg_g');
+
+        document.getElementById('contact-form-home').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('h-submit-btn');
+            btn.disabled = true;
+            btn.textContent = 'Enviando...';
+
+            emailjs.sendForm('service_lxs3l4h', 'template_bwfzykh', this)
+                .then(function() {
+                    document.getElementById('form-success-msg-home').style.display = 'block';
+                    document.getElementById('form-error-msg-home').style.display = 'none';
+                    document.getElementById('contact-form-home').reset();
+                    btn.textContent = 'Enviado!';
+                }, function(error) {
+                    console.error('EmailJS error:', error);
+                    document.getElementById('form-error-msg-home').style.display = 'block';
+                    document.getElementById('form-success-msg-home').style.display = 'none';
+                    btn.disabled = false;
+                    btn.textContent = 'Enviar Mensagem';
+                });
+        });
     </script>
 
     <!-- WhatsApp Float -->
