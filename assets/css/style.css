@@ -602,6 +602,41 @@ img {
     line-height: 1.5;
 }
 
+.about-features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.about-features li {
+    padding: 16px;
+    gap: 12px;
+}
+
+.about-features .feature-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+}
+
+.about-features .feature-text strong {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+
+.about-features .feature-text p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .about-features {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+}
+
 /* === ABOUT IMAGE === */
 .about-image {
     width: 100%;
