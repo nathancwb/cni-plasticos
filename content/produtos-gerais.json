@@ -48,8 +48,11 @@
         "codigo": "Preto 1\": 302 | Preto 3/4\": 026",
         "pedido_minimo": "1 unidade"
       },
-      "img": "",
-      "imgs": []
+      "img": "assets/images/products/aro-multiuso.jpeg",
+      "imgs": [
+        "assets/images/products/aro-multiuso.jpeg",
+        "assets/images/products/aro-multiuso-2.jpeg"
+      ]
     }
   ]
 }

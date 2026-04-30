@@ -21,10 +21,8 @@
           "class": "vermelho",
           "cod": "921",
           "imgs": [
-            "assets/images/products/variants/chave-interruptora/vermelha-1.jpg",
-            "assets/images/products/variants/chave-interruptora/vermelha-2.jpg",
-            "assets/images/products/variants/chave-interruptora/vermelha-3.jpg",
-            "assets/images/products/variants/chave-interruptora/vermelha-4.jpg"
+            "assets/images/products/variants/chave-interruptora/chave-interruptora-vermelha.webp",
+            "assets/images/products/variants/chave-interruptora/chave-interruptora-vermelha-2.webp"
           ]
         },
         {
@@ -32,10 +30,8 @@
           "class": "amarelo",
           "cod": "920",
           "imgs": [
-            "assets/images/products/variants/chave-interruptora/amarela-1.jpg",
-            "assets/images/products/variants/chave-interruptora/amarela-2.jpg",
-            "assets/images/products/variants/chave-interruptora/amarela-3.jpg",
-            "assets/images/products/variants/chave-interruptora/amarela-4.jpg"
+            "assets/images/products/variants/chave-interruptora/chave-interruptora-amarela.webp",
+            "assets/images/products/variants/chave-interruptora/chave-interruptora-amarela-2.webp"
           ]
         }
       ]
@@ -158,8 +154,10 @@
         "codigo": "Variadas 250M: 521 | Variadas 500M: 351",
         "pedido_minimo": "1 rolo"
       },
-      "img": "",
-      "imgs": []
+      "img": "assets/images/products/variants/fio-eletropl-astico/fio-eletroplastico.webp",
+      "imgs": [
+        "assets/images/products/variants/fio-eletropl-astico/fio-eletroplastico.webp"
+      ]
     }
   ]
 }
