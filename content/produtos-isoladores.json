@@ -326,7 +326,10 @@
           "class": "preto",
           "cod": "876",
           "imgs": [
-            "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg"
+            "assets/images/products/variants/gancho-7cm/gancho-novo-7cm-1.jpg",
+            "assets/images/products/variants/gancho-7cm/isolador-gancho-anel-curto-7cm-preto-1.png",
+            "assets/images/products/variants/gancho-7cm/isolador-gancho-anel-curto-7cm-preto-2.png",
+            "assets/images/products/variants/gancho-7cm/isolador-gancho-anel-curto-7cm-preto-3.png"
           ]
         },
         {
