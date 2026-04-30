@@ -28,7 +28,11 @@
           "name": "Amarelo",
           "class": "amarelo",
           "cod": "196",
-          "imgs": []
+          "imgs": [
+            "assets/images/products/variants/porteira/porteira-curta-amarela-1.png",
+            "assets/images/products/variants/porteira/porteira-curta-amarela-2.png",
+            "assets/images/products/variants/porteira/porteira-curta-amarela-3.png"
+          ]
         }
       ]
     },

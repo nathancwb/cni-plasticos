@@ -12,10 +12,33 @@
         "codigo": "Vermelho: 921 | Amarelo: 920",
         "pedido_minimo": "2 unidades"
       },
-      "img": "",
+      "img": "assets/images/products/variants/chave-interruptora/vermelha-1.jpg",
       "has3d": true,
       "model": "assets/models/Peça_com cor.glb",
-      "imgs": []
+      "colors": [
+        {
+          "name": "Vermelho",
+          "class": "vermelho",
+          "cod": "921",
+          "imgs": [
+            "assets/images/products/variants/chave-interruptora/vermelha-1.jpg",
+            "assets/images/products/variants/chave-interruptora/vermelha-2.jpg",
+            "assets/images/products/variants/chave-interruptora/vermelha-3.jpg",
+            "assets/images/products/variants/chave-interruptora/vermelha-4.jpg"
+          ]
+        },
+        {
+          "name": "Amarelo",
+          "class": "amarelo",
+          "cod": "920",
+          "imgs": [
+            "assets/images/products/variants/chave-interruptora/amarela-1.jpg",
+            "assets/images/products/variants/chave-interruptora/amarela-2.jpg",
+            "assets/images/products/variants/chave-interruptora/amarela-3.jpg",
+            "assets/images/products/variants/chave-interruptora/amarela-4.jpg"
+          ]
+        }
+      ]
     },
     {
       "id": "cabo-160",
@@ -82,7 +105,10 @@
           "name": "Amarelo",
           "class": "amarelo",
           "cod": "528",
-          "imgs": []
+          "imgs": [
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-2.jpg",
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-3.jpg"
+          ]
         }
       ]
     },
@@ -113,7 +139,10 @@
           "name": "Amarelo",
           "class": "amarelo",
           "cod": "545",
-          "imgs": []
+          "imgs": [
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-4.jpg",
+            "assets/images/products/variants/tubo-isolador-final/tubo-isolador-reforcado-cerca-eletrica-rural-5.jpg"
+          ]
         }
       ]
     },
