@@ -8,6 +8,7 @@
     const modalNext = document.getElementById('modal-next');
     const galleryImg = document.getElementById('gallery-img');
     const gallery3d = document.getElementById('gallery-3d');
+    const galleryWatermark = document.getElementById('gallery-watermark');
     const galleryBadge = document.getElementById('gallery-badge');
     const galleryHint = document.getElementById('gallery-3d-hint');
     const galleryThumbs = document.getElementById('gallery-thumbs');
@@ -81,7 +82,10 @@
                     : (p.img || '');
 
                 const imgHtml = thumb
-                    ? `<img class="grid-card-img" src="${thumb}" alt="${p.name}" loading="lazy">`
+                    ? `<div class="card-img-container">
+                         <img class="grid-card-img" src="${thumb}" alt="${p.name}" loading="lazy">
+                         <div class="watermark-overlay"></div>
+                       </div>`
                     : `<div class="grid-card-img grid-card-no-img"><span>📷</span></div>`;
 
                 const badgeHtml = p.has3d ? '<span class="badge-3d">3D</span>' : '';
@@ -226,6 +230,7 @@
     function showNoImage() {
         galleryImg.style.display = 'none';
         gallery3d.style.display = 'none';
+        if (galleryWatermark) galleryWatermark.style.display = 'none';
         galleryBadge.textContent = 'Foto em breve';
         galleryBadge.className = 'gallery-badge';
         galleryHint.style.display = 'none';
@@ -318,6 +323,7 @@
         galleryImg.alt = currentProduct ? currentProduct.name : '';
         galleryImg.style.display = 'block';
         gallery3d.style.display = 'none';
+        if (galleryWatermark) galleryWatermark.style.display = 'block';
         galleryBadge.textContent = 'Foto do Produto';
         galleryBadge.className = 'gallery-badge photo';
         galleryHint.style.display = 'none';
@@ -329,6 +335,7 @@
         if (!p || !p.has3d) return;
         galleryImg.style.display = 'none';
         gallery3d.style.display = 'block';
+        if (galleryWatermark) galleryWatermark.style.display = 'none';
         gallery3d.src = p.model;
         gallery3d.alt = `Modelo 3D de ${p.name}`;
         gallery3d.autoRotate = true;

@@ -137,3 +137,67 @@ window.addEventListener('load', () => {
         if (headerLogo) headerLogo.classList.add('visible');
     }
 });
+
+// Protection: Prevent right-click, image dragging, and show Toast notice
+document.addEventListener('DOMContentLoaded', () => {
+    // Disable right-click on images, cards and modal overlay/watermarks
+    document.addEventListener('contextmenu', (e) => {
+        const isProtected = e.target.tagName === 'IMG' || 
+                            e.target.classList.contains('watermark-overlay') || 
+                            e.target.closest('.gallery-main') || 
+                            e.target.closest('.card-img-container');
+        if (isProtected) {
+            e.preventDefault();
+            showCopyrightToast();
+        }
+    });
+
+    // Disable dragging on images
+    document.addEventListener('dragstart', (e) => {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+        }
+    });
+
+    // Elegant toast notification
+    function showCopyrightToast() {
+        let toast = document.getElementById('copyright-toast');
+        if (!toast) {
+            toast = document.createElement('div');
+            toast.id = 'copyright-toast';
+            toast.style.cssText = `
+                position: fixed;
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%) translateY(100px);
+                background-color: var(--dark-sea-blue, #003D58);
+                color: #FFFFFF;
+                padding: 12px 24px;
+                border-radius: 8px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 0.8rem;
+                font-weight: 600;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+                z-index: 10000;
+                transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s;
+                opacity: 0;
+                pointer-events: none;
+                text-align: center;
+                border-left: 4px solid var(--sea-blue, #006CBC);
+                max-width: 90%;
+                line-height: 1.4;
+            `;
+            toast.innerHTML = '⚖️ Uso não autorizado das imagens é proibido por lei (Direitos Autorais)';
+            document.body.appendChild(toast);
+        }
+        
+        toast.style.opacity = '1';
+        toast.style.transform = 'translateX(-50%) translateY(0)';
+        
+        clearTimeout(toast.timeoutId);
+        toast.timeoutId = setTimeout(() => {
+            toast.style.opacity = '0';
+            toast.style.transform = 'translateX(-50%) translateY(100px)';
+        }, 3000);
+    }
+});
